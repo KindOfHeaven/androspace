@@ -151,7 +151,8 @@
 		& > .filter__part--link {
 			color: $black;
 			& > span {
-				color: $black
+				color: $black;
+				background: $yellow;
 			}
 		}
 	}
@@ -162,7 +163,9 @@
 	}
 }
 .filter__part--link {
-	@include flex(row, space-between, center);
+	display: block;
+	width: 174px;
+	max-width: 100%;
 	font-size: $text-small;
 	color: $green-medium;
 	@include transition(color, .3s);
@@ -171,8 +174,15 @@
 	
 	-ms-text-overflow: ellipsis;
 	   	text-overflow: ellipsis;
+	position: relative;
+	padding-right: 30px;
 	& > span  {
 		color: $grey-light;
+		position: absolute;
+		right: 0;
+		top: auto;
+		background: #fff;
+		@include transition(background, .3s);
 	}
 }
 .filter__part--button {
@@ -334,6 +344,7 @@
 		        border-radius: 6px;
 		margin-bottom: 10px;
 		border-top: none !important;
+		max-width: 174px;
 	}
 	.filter__part--list {
 		width: 100%;
