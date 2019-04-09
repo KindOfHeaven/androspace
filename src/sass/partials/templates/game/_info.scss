@@ -1,0 +1,120 @@
+ .game {
+	-webkit-box-shadow: $box-shadow;
+	        box-shadow: $box-shadow;
+	padding-bottom: 20px;
+}
+.game-info {
+	padding: 0 20px;
+}
+.game-info--text {
+	height: 50px;
+	line-height: 50px;
+	color: $black;
+	font-size: $text-small;
+}
+.game-info--button {
+	margin-bottom: 10px;
+	width: 100%;
+	height: 40px;
+	@include flex(row, flex-start, center);
+	padding-left: 15px;
+	border: 1px solid #d7dce0;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+	color: $green-medium;
+	@include transition();
+	& svg {
+		margin-right: 10px;
+		color: inherit;
+	}
+	&:hover {
+		color: $black;
+	}
+}
+.game-info--subtitle {
+	font-weight: 700;
+	font-size: $text;
+	color: $black;
+	margin: 15px 0;
+}
+.game-info--admins {
+	& li {
+		height: 40px;
+		margin-bottom: 10px;
+		& a {
+			@include flex(row, flex-start, center);
+			font-size: $text-small;
+			color: $black;
+			height: 100%;
+			width: 100%;
+		}
+		& img {
+			margin-right: 10px;
+			height: 100%;
+			width: auto;
+		}
+	}
+}
+
+@include respond-above(sm) {
+	.game-info--admins-block {
+		display: inline-block;
+		width: 40%;
+	}
+	.game-info--buttons {
+		display: inline-block;
+		width: 60%;
+	}
+	.game-info-admins-block {
+		margin-left: 10px;
+	}
+	.game-info--button {
+		width: 230px;
+		padding-left: 10px;
+	}
+}
+
+@include respond-above(md) {
+	.main-game {
+		padding: 20px;
+		background: $inactive;
+		@include flex(row, space-between, flex-start, wrap);
+	}
+	.game {
+		flex: 0 0 calc(100% - 185px);
+		width: calc(100% - 185px);
+		order: 1;
+		-webkit-border-top-right-radius: 6px;
+		        border-top-right-radius: 6px;
+	}
+}
+@include respond-above(lg) {
+	.game {
+		flex: 0 0 calc(100% - 194px);
+		width: calc(100% - 194px);
+	}
+	.game-download__block--files {
+		display: inline-flex;
+		margin-right: 30px;
+	}
+}
+@include respond-above(xl) {
+	.main-game {
+		@include flex(row, center, flex-start, wrap);
+	}
+	.game {
+		flex: 0 0 975px;
+		width: 975px;
+		margin-bottom: 80px;
+	}
+	.game-info--buttons {
+		width: 385px;
+	}
+	.game-info--button {
+		width: 230px;
+	}
+	.game-info {
+		-webkit-justify-content: flex-start;
+		        justify-content: flex-start;
+	}
+}

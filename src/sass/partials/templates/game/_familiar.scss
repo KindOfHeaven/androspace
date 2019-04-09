@@ -1,0 +1,36 @@
+.list.-game {
+	& .slick-dots {
+		bottom: -35px;
+	}
+}
+
+
+@include respond-above(md) {
+	.list.-game {
+		flex: 0 0 100%;
+		order: 3;
+	}
+	.list__block.-one--row .list__item:nth-child(-n+4) {
+		display: block;
+	}
+}
+@include respond-above(lg) {
+	.list__block.-one--row .list__item:nth-child(-n+5) {
+		display: block;
+	}
+	.list.-game {
+		.title__text {
+			font-size: 32px;
+		}
+	}
+}
+@include respond-above(xl) {
+	.list__block.-one--row .list__item:nth-child(-n+5) {
+		display: block;
+	}
+	.list.-game {
+		.title__text {
+			margin-top: 20px;
+		}
+	}
+}

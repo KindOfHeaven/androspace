@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Meta Tags -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<meta name="HandheldFriendly" content="true">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+  	<link rel="icon" href="favicon.ico">
+	<!--[if lt IE 9]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Title -->
+	<title>Androspace</title>
+	<!-- Links -->
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<a href="javascript:void(0)" class="header__logo"><img src="./img/logo.svg" alt="Logotype"></a>
+			<nav class="header__nav">
+				<a href="javascript:void(0)" class="header__nav--hamburger" id="hamburger">
+					<svg class="hamburger__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 22.5" xml:space="preserve">
+						<g class="svg-menu-toggle">
+							<path class="bar" d="M20.945,8.75c0,0.69-0.5,1.25-1.117,1.25H3.141c-0.617,0-1.118-0.56-1.118-1.25l0,0c0-0.69,0.5-1.25,1.118-1.25h16.688C20.445,7.5,20.945,8.06,20.945,8.75L20.945,8.75z"></path>
+							<path class="bar" d="M20.923,15c0,0.689-0.501,1.25-1.118,1.25H3.118C2.5,16.25,2,15.689,2,15l0,0c0-0.689,0.5-1.25,1.118-1.25 h16.687C20.422,13.75,20.923,14.311,20.923,15L20.923,15z"></path>
+							<path class="bar" d="M20.969,21.25c0,0.689-0.5,1.25-1.117,1.25H3.164c-0.617,0-1.118-0.561-1.118-1.25l0,0c0-0.689,0.5-1.25,1.118-1.25h16.688C20.469,20,20.969,20.561,20.969,21.25L20.969,21.25z"></path>
+						</g>
+					</svg>
+				</a>
+				<ul class="header__menu" id="menu">
+					<li class="header__menu--item js-menu__item" data-active="true"><a href="javascript:void(0)" class="header__menu--link">Игры</a></li>
+					<li class="header__menu--item js-menu__item"><a href="javascript:void(0)" class="header__menu--link">Программы</a></li>
+					<li class="header__menu--item js-menu__item"><a href="javascript:void(0)" class="header__menu--link">Оформление</a></li>
+					<li class="header__menu--item js-menu__item" data-submenu="has-submenu">
+						<a href="javascript:void(0)" class="header__menu--link">Темы</a>
+						<ul class="header__submenu">
+							<li class="header__submenu--item">
+								<a href="javascript:void(0)" class="header__submenu--link">Темы</a>
+							</li>
+							<li class="header__submenu--item">
+								<a href="javascript:void(0)" class="header__submenu--link">Обои</a>
+							</li>
+							<li class="header__submenu--item">
+								<a href="javascript:void(0)" class="header__submenu--link">Каринки</a>
+							</li>
+						</ul>
+					</li>
+					<li class="header__menu--item js-menu__item"><a href="javascript:void(0)" class="header__menu--link">Обои</a></li>
+					<li class="header__menu--item js-menu__item"><a href="javascript:void(0)" class="header__menu--link">Картинки</a></li>
+					<li class="header__menu--item js-menu__item"><a href="javascript:void(0)" class="header__menu--link">Виджеты</a></li>
+					<li class="header__menu--item js-menu__item" data-submenu="has-submenu"><a href="javascript:void(0)" class="header__menu--link">Статьи</a></li>
+				</ul>
+			</nav>
+			<nav class="header__buttons">
+				<div class="header__search" id="searchBlock">
+					<input type="text" class="header__search--input" id="searchInput" placeholder="Что найти?">
+					<a href="javascript:void(0)" class="header__search--icon" id="searchIcon">
+						<svg class="icon h-icons--icon-14">
+					    	<use xlink:href="./img/sprite.svg#icons--icon14"></use>
+						</svg>
+					</a>
+					<a href="javascript:void(0)" class="header__search--cross" id="searchCross">
+						<svg class="icon h-icons--icon-16">
+					    	<use xlink:href="./img/sprite.svg#icons--icon16"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="header__auth">
+					<a href="javascript:void(0)" class="header__auth--button">
+						Вход
+					</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+<section class="subcategory__head">
+	<div class="container">
+		<ul class="subcategory__head--breadcrumbs">
+			<li class="subcategory__head--breadcrumb"><a href="javascript:void(0)" class="subcategory__head--link">Главная</a></li>
+			<li class="subcategory__head--breadcrumb"><a href="javascript:void(0)" class="subcategory__head--link">Игры</a></li>
+			<li class="subcategory__head--breadcrumb"><a href="javascript:void(0)" class="subcategory__head--link">Аркады</a></li>
+		</ul>
+		<h1 class="subcategory__head--title">Каталог Аркад для Андроид</h1>
+	</div>
+</section>
+<div class="filter__buttons">
+<div class="container">
+	<div class="filter--button">
+		<a href="javascript:void(0)" class="js-filter">
+			<svg class="icon icons--icon-22">
+				<use xlink:href="./img/sprite.svg#icons--icon22"></use>
+			</svg>
+			Поделиться 
+		</a>
+		<ul class="filter__submenu js-filter__submenu">
+			<li class="filter__submenu--item">
+				<a href="javascript:void(0)" class="filter__submenu--link">
+					<svg class="icon icons--icon-26">
+						<use xlink:href="./img/sprite.svg#icons--icon26"></use>
+					</svg>
+					Facebook 
+				</a>
+			</li>
+			<li class="filter__submenu--item">
+				<a href="javascript:void(0)" class="filter__submenu--link">
+					<svg class="icon icons--icon-25">
+						<use xlink:href="./img/sprite.svg#icons--icon25"></use>
+					</svg>
+					Twitter 
+				</a>
+			</li>
+			<li class="filter__submenu--item">
+				<a href="javascript:void(0)" class="filter__submenu--link">
+					<svg class="icon icons--icon-27">
+						<use xlink:href="./img/sprite.svg#icons--icon27"></use>
+					</svg>
+					Vkontakte 
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="filter--button -dropdown">
+		<a href="javascript:void(0)" class='js-filter'>
+			Сначала популярные
+			<svg class="icon icons--icon-13">
+				<use xlink:href="./img/sprite.svg#icons--icon13"></use>
+			</svg>
+		</a>
+		<ul class="filter__submenu js-filter__submenu">
+			<li class="filter__submenu--item">
+				<a href="javascript:void(0)" class="filter__submenu--link">
+					Сначала новые 
+				</a>
+			</li>
+			<li class="filter__submenu--item">
+				<a href="javascript:void(0)" class="filter__submenu--link">
+					Сначала дешевые 
+				</a>
+			</li>
+			<li class="filter__submenu--item">
+				<a href="javascript:void(0)" class="filter__submenu--link">
+					Сначала дорогие 
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="filter--button filter--button_filter -filter">
+		<a href="javascript:void(0)" class="js-filter__open">
+			<svg class="icon icons--icon-35">
+				<use xlink:href="./img/sprite.svg#icons--icon35"></use>
+			</svg>
+			Показать фильтр 
+		</a>
+	</div>
+	<div class="filter--button filter--button_filter">
+		<a href="javascript:void(0)">
+			<svg class="icon icons--icon-18">
+				<use xlink:href="./img/sprite.svg#icons--icon18"></use>
+			</svg>
+			Сбросить фильтр 
+		</a>
+	</div>
+</div>
+</div>
+
+<main class="has-aside">
+	<aside class="filter">
+	<div class="filter__block">
+		<div class="filter__part">
+			<p class="filter__part--title">Тематика</p>		
+			<ul class="filter__part--list js-filter__part--list">
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Кошки<span>135</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Собаки<span>17</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Рисунки<span>58</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Медведи<span>6</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Лягушки<span>17</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Кролики<span>99</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Рыбы<span>18</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Музыка<span>59</span></a>
+				</li>
+			</ul>
+		</div>
+		<div class="filter__part">
+			<p class="filter__part--title">Размеры</p>
+			<input type="text" class="filter__part--input js-filter__part--input" data-state="hidden" placeholder="Найти">
+			<ul class="filter__part--list js-filter__part--list">
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">А Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Б Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">В Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">В Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Б Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">А Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Г Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Д Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Е Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Ж Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">З Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">И Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">С Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Я Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">я Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки0</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+			</ul>
+			<a href="javascript:void(0)" class="filter__part--button js-filter__show">
+				<svg class="icon icons--icon-13">
+					<use xlink:href="./img/sprite.svg#icons--icon13"></use>
+				</svg>
+				<span>Показать все</span>
+			</a>
+		</div>
+		<div class="filter__part">
+			<p class="filter__part--title">Цвет</p>
+			<ul class="filter__part--list js-filter__part--list">
+				<li class="filter__part--item -has-color">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<span class="filter--color" style="background: #000000"></span>
+						Черные
+					</a>
+				</li>
+				<li class="filter__part--item -has-color">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<span class="filter--color" style="background: #929292"></span>
+						Серые
+					</a>
+				</li>
+				<li class="filter__part--item -has-color">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<span class="filter--color" style="background: #ffffff"></span>
+						Белые
+					</a>
+				</li>
+				<li class="filter__part--item -has-color">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<span class="filter--color" style="background: #ffd932"></span>
+						Желтые
+					</a>
+				</li>
+				<li class="filter__part--item -has-color">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<span class="filter--color" style="background: #27d443"></span>
+						Зеленые
+					</a>
+				</li>
+				<li class="filter__part--item -has-color">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<span class="filter--color" style="background: #14d3d4"></span>
+						Бирюзовые
+					</a>
+				</li>
+				<li class="filter__part--item -has-color">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<span class="filter--color" style="background: #057cfb"></span>
+						Синие
+					</a>
+				</li>
+				<li class="filter__part--item -has-color">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<span class="filter--color" style="background: #cf00d8"></span>
+						Фиолетовые
+					</a>
+				</li>
+				<li class="filter__part--item -has-color">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<span class="filter--color" style="background: #fd2b20"></span>
+						Красные
+					</a>
+				</li>
+				<li class="filter__part--item -has-color">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<span class="filter--color" style="background: #ffa12a"></span>
+						Оранжевые
+					</a>
+				</li>
+			</ul>
+		</div>
+		<a href="javascript:void(0)" class="filter--submit js-filter--submit">
+			Применить
+		</a>
+		<div class="filter__part filter__part--best">
+			<p class="filter__part--title">Лучшие игры</p>
+			<ul class="filter__part--list">
+				<li class="filter__part--item -has-img">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<img src="./img/filter.png" alt="best">
+						Fortnite
+					</a>
+				</li>
+				<li class="filter__part--item -has-img">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<img src="./img/filter.png" alt="best">
+						Fortnite
+					</a>
+				</li>
+				<li class="filter__part--item -has-img">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<img src="./img/filter.png" alt="best">
+						Fortnite
+					</a>
+				</li>
+				<li class="filter__part--item -has-img">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<img src="./img/filter.png" alt="best">
+						Fortnite
+					</a>
+				</li>
+				<li class="filter__part--item -has-img">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<img src="./img/filter.png" alt="best">
+						Fortnite
+					</a>
+				</li>
+				<li class="filter__part--item -has-img">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<img src="./img/filter.png" alt="best">
+						Fortnite
+					</a>
+				</li>
+				<li class="filter__part--item -has-img">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<img src="./img/filter.png" alt="best">
+						Fortnite
+					</a>
+				</li>
+				<li class="filter__part--item -has-img">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<img src="./img/filter.png" alt="best">
+						Fortnite
+					</a>
+				</li>
+				<li class="filter__part--item -has-img">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<img src="./img/filter.png" alt="best">
+						Fortnite
+					</a>
+				</li>
+				<li class="filter__part--item -has-img">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<img src="./img/filter.png" alt="best">
+						Fortnite
+					</a>
+				</li>
+				<li class="filter__part--item -has-img">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<img src="./img/filter.png" alt="best">
+						Fortnite
+					</a>
+				</li>
+				<li class="filter__part--item -has-img">
+					<a href="javascript:void(0)" class="filter__part--link">
+						<img src="./img/filter.png" alt="best">
+						Fortnite
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</aside>
+	<div class="main-content">
+		<div class="items">
+			<div class="container">
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img">
+						<a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+						</div>
+						<div class="item__head--title"><a href="javascript:void(0)" class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description -more">Станьте одним из участников самой популярной королевской. Станьте одним из участников самой популярной королевской. Станьте одним из участников самой популярной королевской. Станьте одним из участников самой популярной королевской. Станьте одним из участников самой популярной королевской. Станьте одним из участников самой популярной королевской. Станьте одним из участников самой популярной королевской.</p>
+						</div>
+						<div class="item__tags">
+						<a href="javascript:void(0)" class="item__tags--tag">Гонки</a>
+						<a href="javascript:void(0)" class="item__tags--tag">Машинки</a>
+						<a href="javascript:void(0)" class="item__tags--tag">Симуляторы</a>
+						<a href="javascript:void(0)" class="item__tags--tag">Машинки</a>
+						<a href="javascript:void(0)" class="item__tags--tag -plus">
+							<svg class="icon icons--icon-17">
+								<use xlink:href="./img/sprite.svg#icons--icon17"></use>
+							</svg>
+						</a>
+					</div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img"><a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+							</div>
+						<div class="item__head--title"><a href="javascript:void(0)"  class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description">Станьте одним из участников самой популярной королевской.</p>
+						</div>
+					<div class="item__tags"><a href="javascript:void(0)" class="item__tags--tag">Гонки</a><a href="javascript:void(0)" class="item__tags--tag">Машинки</a></div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img"><a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+							</div>
+						<div class="item__head--title"><a href="javascript:void(0)"  class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description">Станьте одним из участников самой популярной королевской.</p>
+						</div>
+					<div class="item__tags"><a href="javascript:void(0)" class="item__tags--tag">Гонки</a><a href="javascript:void(0)" class="item__tags--tag">Машинки</a></div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img"><a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+							</div>
+						<div class="item__head--title"><a href="javascript:void(0)"  class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description">Станьте одним из участников самой популярной королевской.</p>
+						</div>
+					<div class="item__tags"><a href="javascript:void(0)" class="item__tags--tag">Гонки</a><a href="javascript:void(0)" class="item__tags--tag">Машинки</a></div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img"><a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+							</div>
+						<div class="item__head--title"><a href="javascript:void(0)"  class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description">Станьте одним из участников самой популярной королевской.</p>
+						</div>
+					<div class="item__tags"><a href="javascript:void(0)" class="item__tags--tag">Гонки</a><a href="javascript:void(0)" class="item__tags--tag">Машинки</a></div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img"><a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+							</div>
+						<div class="item__head--title"><a href="javascript:void(0)"  class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description">Станьте одним из участников самой популярной королевской.</p>
+						</div>
+					<div class="item__tags"><a href="javascript:void(0)" class="item__tags--tag">Гонки</a><a href="javascript:void(0)" class="item__tags--tag">Машинки</a></div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img"><a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+							</div>
+						<div class="item__head--title"><a href="javascript:void(0)"  class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description">Станьте одним из участников самой популярной королевской.</p>
+						</div>
+					<div class="item__tags"><a href="javascript:void(0)" class="item__tags--tag">Гонки</a><a href="javascript:void(0)" class="item__tags--tag">Машинки</a></div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img"><a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+							</div>
+						<div class="item__head--title"><a href="javascript:void(0)"  class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description">Станьте одним из участников самой популярной королевской.</p>
+						</div>
+					<div class="item__tags"><a href="javascript:void(0)" class="item__tags--tag">Гонки</a><a href="javascript:void(0)" class="item__tags--tag">Машинки</a></div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img"><a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+							</div>
+						<div class="item__head--title"><a href="javascript:void(0)"  class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description">Станьте одним из участников самой популярной королевской.</p>
+						</div>
+					<div class="item__tags"><a href="javascript:void(0)" class="item__tags--tag">Гонки</a><a href="javascript:void(0)" class="item__tags--tag">Машинки</a></div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img"><a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+							</div>
+						<div class="item__head--title"><a href="javascript:void(0)"  class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description">Станьте одним из участников самой популярной королевской.</p>
+						</div>
+					<div class="item__tags"><a href="javascript:void(0)" class="item__tags--tag">Гонки</a><a href="javascript:void(0)" class="item__tags--tag">Машинки</a></div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img"><a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+							</div>
+						<div class="item__head--title"><a href="javascript:void(0)"  class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description">Станьте одним из участников самой популярной королевской.</p>
+						</div>
+					<div class="item__tags"><a href="javascript:void(0)" class="item__tags--tag">Гонки</a><a href="javascript:void(0)" class="item__tags--tag">Машинки</a></div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img"><a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+							</div>
+						<div class="item__head--title"><a href="javascript:void(0)"  class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description">Станьте одним из участников самой популярной королевской.</p>
+						</div>
+					<div class="item__tags"><a href="javascript:void(0)" class="item__tags--tag">Гонки</a><a href="javascript:void(0)" class="item__tags--tag">Машинки</a></div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img"><a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+							</div>
+						<div class="item__head--title"><a href="javascript:void(0)"  class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description">Станьте одним из участников самой популярной королевской.</p>
+						</div>
+					<div class="item__tags"><a href="javascript:void(0)" class="item__tags--tag">Гонки</a><a href="javascript:void(0)" class="item__tags--tag">Машинки</a></div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img"><a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+							</div>
+						<div class="item__head--title"><a href="javascript:void(0)"  class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description">Станьте одним из участников самой популярной королевской.</p>
+						</div>
+					<div class="item__tags"><a href="javascript:void(0)" class="item__tags--tag">Гонки</a><a href="javascript:void(0)" class="item__tags--tag">Машинки</a></div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img"><a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+							</div>
+						<div class="item__head--title"><a href="javascript:void(0)"  class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description">Станьте одним из участников самой популярной королевской.</p>
+						</div>
+					<div class="item__tags"><a href="javascript:void(0)" class="item__tags--tag">Гонки</a><a href="javascript:void(0)" class="item__tags--tag">Машинки</a></div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img"><a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+							</div>
+						<div class="item__head--title"><a href="javascript:void(0)"  class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description">Станьте одним из участников самой популярной королевской.</p>
+						</div>
+					<div class="item__tags"><a href="javascript:void(0)" class="item__tags--tag">Гонки</a><a href="javascript:void(0)" class="item__tags--tag">Машинки</a></div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<div class="item">
+					<div class="item__head">
+						<div class="item__head--img"><a href="javascript:void(0)"><img src="./img/item.png" alt=""></a>
+							</div>
+						<div class="item__head--title"><a href="javascript:void(0)"  class="item__head--name">The Walking Dead: Season One</a>
+						<p class="item__head--description">Станьте одним из участников самой популярной королевской.</p>
+						</div>
+					<div class="item__tags"><a href="javascript:void(0)" class="item__tags--tag">Гонки</a><a href="javascript:void(0)" class="item__tags--tag">Машинки</a></div>
+					</div>
+					<div class="item__content">
+						<span class="item__content--downloads">
+							<svg class="icon icons--icon-29">
+								<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+							</svg>
+							2410
+						</span>
+						<span class="item__content--comments">
+							<svg class="icon icons--icon-5">
+								<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+							</svg>
+							1,8k
+						</span>
+						<span class="item__content--time">20 минут назад</span>
+					</div>
+					<div class="item__hover">
+						<ul class="item__hover--list">
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Графика</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Геймплей</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">Управление</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">5</span>
+							</li>
+							<li class="item__hover--item">
+								<span class="item__hover--item_name">В целом</span>
+								<span class="item__hover--item_line"></span>
+								<span class="item__hover--item_rate">4</span>
+							</li>
+						</ul>
+						<a href="javascript:void(0)" class="item__hover--link">142 отзыва</a>
+					</div>
+					<div class="list__item--rating js-item__rating" data-rate="high">8,8</div>
+				</div>
+				<a href="javascript:void(0)" class="items__show_more">
+				<svg class="icon icons--icon-13">
+					<use xlink:href="./img/sprite.svg#icons--icon13"></use>
+				</svg>Показать еще</a>
+			</div>
+		</div>
+	</div>
+</main>
+<div class="pagination">
+	<div class="container">
+		<nav class="pagination__block">
+			<span class="pagination__block--arrow -left">
+				Назад
+				<svg class="icon icons--icon-21">
+					<use xlink:href="./img/sprite.svg#icons--icon21"></use>
+				</svg>
+			</span>
+			<ul class="pagination__block--list">
+				<li class="pagination__block--item" data-state="is-active">1</li>
+				<li class="pagination__block--item">2</li>
+				<li class="pagination__block--item">3</li>
+				<li class="pagination__block--item">4</li>
+				<li class="pagination__block--item">5</li>
+				<li class="pagination__block--item">6</li>
+				<li class="pagination__block--item">7</li>
+				<li class="pagination__block--item">8</li>
+				<li class="pagination__block--item">9</li>
+				<li class="pagination__block--item">10</li>
+				<li class="pagination__block--item">11</li>
+				<li class="pagination__block--item">12</li>
+				<li class="pagination__block--item">13</li>
+				<li class="pagination__block--item">14</li>
+				<li class="pagination__block--item">15</li>
+				<li class="pagination__block--item">16</li>
+				<li class="pagination__block--item">17</li>
+			</ul>
+			<span class="pagination__block--arrow">
+				Дальше
+				<svg class="icon icons--icon-21">
+					<use xlink:href="./img/sprite.svg#icons--icon21"></use>
+				</svg>
+			</span>
+		</nav>
+	</div>
+</div>
+<section class="page-info">
+	<div class="container">
+		<h2 class="page-info--title">Информация о странице</h2>
+		<p class="page-info--subtitle">Бесплатные мобильные картинки и заставки Абстракция</p>
+		<p class="page-info--text">Каталог картинок на тему "Абстракция" построен наиболее удобным образом для наших пользователей. Все картинки с Абстракция бесплатные и скачать их очень удобно, как на компьютер, так и на мобильный телефон через wap.mob.org.ru. Каталог картинок «Абстракция» для телефонов постоянно пополняется новыми красивыми и оригинальными картинками, найденными в сети интернет или загруженными пользователями нашего портала.</p>
+		<p class="page-info--text">Внимание! Все картинки Абстракция на сайте были найдены свободно распространяемыми в интернете или загружены пользователями портала и представлены только в ознакомительных целях. Скачивая бесплатные картинки Абстракция на телефон у нас на сайте, вы обязуетесь ознакомиться и удалить картинку с телефона.</p>
+	</div>
+</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__left">
+				<nav class="footer__nav">
+					<ul class="footer__menu">
+						<li class="footer__menu--item"><a href="javascript:void(0)" class="footer__menu--link">Конкурс</a></li>
+						<li class="footer__menu--item"><a href="javascript:void(0)" class="footer__menu--link">Контакты</a></li>
+					</ul>
+				</nav>
+				<p class="footer--copyright">© androspace.ru, 2017 — 2018</p>
+			</div>
+			<div class="footer__links">
+				<a href="javascript:void(0)" class="footer--link">Правообладателям</a>
+				<a href="javascript:void(0)" class="footer--link">Отказ от ответственности</a>
+				<a href="javascript:void(0)" class="footer--link">Политика конфиденциальности</a>
+			</div>
+		</div>
+	</footer>
+	<!-- Modals -->
+	<div class="opacity"></div>
+	<!-- Scripts -->
+	<script src="./js/main.js"></script>
+</body>
+</html>

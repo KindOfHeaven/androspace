@@ -1,0 +1,226 @@
+.game-descr {
+	padding: 20px;
+	border-bottom: 1px solid #d7dce0;
+}
+.game-descr--download {
+	@include btn(100%, 50px, $white, $orange-light, $white, $orange-medium, $white, $orange);
+	font-size: $text;
+	font-weight: 700;
+}
+.game-descr--numbers {
+	@include flex(row, center, center, nowrap);
+	height: 50px;
+	width: 100%;
+	& .item__content--downloads, & .item__content--comments  {
+		flex: 0 0 auto;
+		margin: 0 10px;
+	}
+}
+.game--share {
+	width: 100%;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	height: 50px;
+	border: 1px solid #d7dce0;
+	color: $green-medium;
+	@include transition();
+	& > a {
+		@include flex(row, center);
+	}
+	&:hover, &:focus {
+		border: 1px solid #d7dce0;
+		color: $black;
+	}
+	& .filter__submenu {
+		top: 51px;
+	}
+	margin: 0;
+}
+.game-descr--description {
+	margin: 15px 0;
+	font-size: $text-small;
+	line-height: 23px;
+	color: $black;
+}
+.game-descr--tags {
+	padding: 0;
+	marign: 0;
+	& .item__tags--tag {
+		height: 40px;
+		padding: 0 20px;
+		text-transform: lowercase;
+		&.-plus {
+			padding: 0 10px;
+			width: 40px;
+		}
+	}
+}
+
+.game-descr--slider-for {
+	width: calc(100% + 40px);
+	position: relative;
+	left: -20px;
+	margin: 20px 0;
+	& img {
+		width: 100%;
+		height: auto;
+	}
+}
+.game-descr--slider-nav--wrap {
+	width: calc(100% + 20px);
+	overflow: hidden;
+}
+.game-descr--slider-nav {
+	width: calc(100% + 80px);
+	& .slick-slide {
+		margin: 0 5px;
+		width: 115px;
+		height: auto;
+		border: 4px solid transparent;
+		&.slick-current {
+			border-color: $yellow
+		}
+		& > div {
+			height: 100%;
+			&:after {
+				content: "";
+				display: block;
+				padding-top: 100%;
+				position: absolute;
+				top: 0;
+			}	
+		}
+		overflow: hidden;
+	}
+	& .game-descr--slider-item {
+		width: 100% !important;
+		height: 100%;
+		display: block !important;
+		
+		z-index: -1;
+		& img {
+			width: 100%;
+			height: auto;
+		}
+		&:after {
+			content: "";
+			display: block;
+			padding-top: 100%;
+			position: absolute;
+			top: 0;
+		}
+	}
+	height: auto;
+	
+	& .slick-prev {
+		width: 40px;
+		height: 40px;
+		padding: 0;
+		margin: 0;
+		border: none;
+		outline: none;
+		font-size: 40px;
+		background: none;
+		cursor: pointer;
+		position: absolute;
+		-webkit-transform: rotate(180deg);
+		   -moz-transform: rotate(180deg);
+		    -ms-transform: rotate(180deg);
+		     -o-transform: rotate(180deg);
+		        transform: rotate(180deg);
+		top: 20px;
+		left: 5px;
+		color: #c8c8c8;
+		@include transition();
+		&:hover {
+			color: $green-medium;
+		}
+	}
+	& .slick-next {
+		width: 40px;
+		height: 40px;
+		padding: 0;
+		margin: 0;
+		border: none;
+		outline: none;
+		font-size: 40px;
+		background: none;
+		cursor: pointer;
+		position: absolute;
+		top: 20px;
+		right: 5px;
+		color: #c8c8c8;
+		@include transition();
+		&:hover {
+			color: $green-medium;
+		}
+	}
+}
+@include respond-above(sm) {
+	.game-descr {
+		padding-top: 25px;
+	}
+	.game-descr--download {
+		display: inline-flex;
+		width: calc(100% - 225px);
+	}
+	.game-descr--numbers {
+		width: 215px;
+		display: inline-flex;
+	}
+	.game--share {
+		margin-top: 20px;
+	}
+}
+@include respond-above(hmd) {
+	.game-descr--download {
+		width: auto;
+		flex: 0 0 auto;
+		padding: 0 35px;
+	}
+	.game-descr--numbers {
+		width: 200px;
+		flex: 0 0 200px;
+		display: inline-flex;
+	}
+	.game--share {
+		flex: 0 0 165px;
+		width: 165px;
+		margin-top: 0;
+	}
+	.game-descr--toolbar {
+		@include flex(row, flex-start, flex-start);
+	}
+}
+@include respond-above(md) {
+	.game-descr {
+		& .item__tags--tag {
+			font-size: $text-small;
+		}
+		& .item__tags {
+			border-bottom: none !important;
+		}
+	}
+}
+@include respond-above(lg) {
+	.game-descr--toolbar {
+		-webkit-justify-content: flex-start;
+		        justify-content: flex-start;
+	}
+	.game--share {
+		flex: 0 0 auto;
+		padding: 0 30px;
+	}
+	.game-descr--download {
+		font-size: 20px;
+	}
+}
+@include respond-above(xl) {
+	.game-descr--slider-nav--wrap {
+		width: 100%;
+	}
+	.game-descr--slider-nav {
+		padding: 0 60px;
+		width: 100%;
+	}
+}

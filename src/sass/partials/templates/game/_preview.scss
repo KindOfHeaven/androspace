@@ -1,0 +1,137 @@
+.game {
+	background: #fff;
+	width: 100%;
+}
+.game-preview {
+	padding: 20px;
+	border-bottom: 1px solid #d7dce0;
+}
+.game-preview--img {
+	& img {
+		width: 100%;
+		height: auto;
+	}
+}
+.game-preview--rating {
+	margin-top: 20px;
+	@include flex(row, space-between, center);
+	& .game-preview--list {
+		width: calc(100% - 125px);
+	}
+	& .new__item--rating {
+		width: 80px;
+		height: 80px;
+		position: static;
+		-webkit-border-radius: 40px;
+		        border-radius: 40px;
+		margin-right: 15px;
+		font-size: $text-large;
+	}
+}
+.game-preview--list {
+	@include flex(column, flex-start, flex-start);
+}
+.game-preview--item {
+	@include flex(row, flex-start, center);
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+}
+.game-preview--rating-name {
+	flex: 0 0 auto;
+	color: $grey-light;
+	font-size: $text-small;
+}
+.game-preview--rating-rate {
+	flex: 0 0 auto;
+	color: $black;
+	font-size: $text-small;
+	& .icons--icon-16 {
+		color: #d7dce0;
+	}
+	& .icons--icon-15 {
+		color: $green-medium;
+	}
+}
+.game-preview--rating-line {
+	background: #c8c8c8;
+	flex: 1 1 auto;
+	margin: 0 7px;
+	height: 1px;
+}
+.game-preview--link {
+	margin: 10px 0;
+	color: $green-medium;
+	font-size: $text-small;
+	display: block;
+	@include transition();
+	&:hover {
+		color: $black;
+	}
+}
+.game-preview__info {
+	& .game-preview--rating-rate {
+		flex: 0 0 135px;
+		text-align: left;
+		padding-left: 3px;
+	}
+}
+
+@include respond-above(sm) {
+	.game-preview {
+		padding: 15px 20px;
+		@include flex(row, flex-start, flex-start);
+	}
+	.game-preview--img {
+		flex: 0 0 155px;
+		margin-right: 15px;
+	}
+	.game-preview__content {
+		flex: 1 1 auto;
+	}
+	.game-preview--rating {
+		margin-top: 0;
+	}
+}
+@include respond-above(md) {
+	.game-preview--img {
+		flex: 0 0 175px;
+		width: 175px;
+	}
+}
+@include respond-above(lg) {
+	.game-preview {
+		padding: 0;
+	}
+	.game-preview--img {
+		height: 200px;
+		flex: 0 0 200px;
+	}
+	.game-preview__content {
+		@include flex(column, flex-start, flex-start, wrap);
+		height: 200px;
+	}
+	.game-preview--rating {
+		flex: 0 0 auto;
+		width: 250px;
+		margin-top: 20px;
+	}
+	.game-preview__info {
+		flex: 0 0 100%;
+		width: calc(100% - 250px);
+		padding-top: 20px;
+		padding-left: 35px;
+		border-left: 1px solid #d7dce0;
+	}
+	.game-preview--item {
+		height: 30px;
+	}
+}
+@include respond-above(xl) {
+	.game-preview--rating {
+		width: 375px;
+	}
+	.game-preview__info {
+		width: calc(100% - 375px);
+	}
+}

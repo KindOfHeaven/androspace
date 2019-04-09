@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Meta Tags -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<meta name="HandheldFriendly" content="true">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+  	<link rel="icon" href="favicon.ico">
+	<!--[if lt IE 9]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Title -->
+	<title>Androspace</title>
+	<!-- Links -->
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<a href="javascript:void(0)" class="header__logo"><img src="./img/logo.svg" alt="Logotype"></a>
+			<nav class="header__nav">
+				<a href="javascript:void(0)" class="header__nav--hamburger" id="hamburger">
+					<svg class="hamburger__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 22.5" xml:space="preserve">
+						<g class="svg-menu-toggle">
+							<path class="bar" d="M20.945,8.75c0,0.69-0.5,1.25-1.117,1.25H3.141c-0.617,0-1.118-0.56-1.118-1.25l0,0c0-0.69,0.5-1.25,1.118-1.25h16.688C20.445,7.5,20.945,8.06,20.945,8.75L20.945,8.75z"></path>
+							<path class="bar" d="M20.923,15c0,0.689-0.501,1.25-1.118,1.25H3.118C2.5,16.25,2,15.689,2,15l0,0c0-0.689,0.5-1.25,1.118-1.25 h16.687C20.422,13.75,20.923,14.311,20.923,15L20.923,15z"></path>
+							<path class="bar" d="M20.969,21.25c0,0.689-0.5,1.25-1.117,1.25H3.164c-0.617,0-1.118-0.561-1.118-1.25l0,0c0-0.689,0.5-1.25,1.118-1.25h16.688C20.469,20,20.969,20.561,20.969,21.25L20.969,21.25z"></path>
+						</g>
+					</svg>
+				</a>
+				<ul class="header__menu" id="menu">
+					<li class="header__menu--item js-menu__item" data-active="true"><a href="javascript:void(0)" class="header__menu--link">Игры</a></li>
+					<li class="header__menu--item js-menu__item"><a href="javascript:void(0)" class="header__menu--link">Программы</a></li>
+					<li class="header__menu--item js-menu__item"><a href="javascript:void(0)" class="header__menu--link">Оформление</a></li>
+					<li class="header__menu--item js-menu__item" data-submenu="has-submenu">
+						<a href="javascript:void(0)" class="header__menu--link">Темы</a>
+						<ul class="header__submenu">
+							<li class="header__submenu--item">
+								<a href="javascript:void(0)" class="header__submenu--link">Темы</a>
+							</li>
+							<li class="header__submenu--item">
+								<a href="javascript:void(0)" class="header__submenu--link">Обои</a>
+							</li>
+							<li class="header__submenu--item">
+								<a href="javascript:void(0)" class="header__submenu--link">Каринки</a>
+							</li>
+						</ul>
+					</li>
+					<li class="header__menu--item js-menu__item"><a href="javascript:void(0)" class="header__menu--link">Обои</a></li>
+					<li class="header__menu--item js-menu__item"><a href="javascript:void(0)" class="header__menu--link">Картинки</a></li>
+					<li class="header__menu--item js-menu__item"><a href="javascript:void(0)" class="header__menu--link">Виджеты</a></li>
+					<li class="header__menu--item js-menu__item" data-submenu="has-submenu"><a href="javascript:void(0)" class="header__menu--link">Статьи</a></li>
+				</ul>
+			</nav>
+			<nav class="header__buttons">
+				<div class="header__search" id="searchBlock">
+					<input type="text" class="header__search--input" id="searchInput" placeholder="Что найти?">
+					<a href="javascript:void(0)" class="header__search--icon" id="searchIcon">
+						<svg class="icon h-icons--icon-14">
+					    	<use xlink:href="./img/sprite.svg#icons--icon14"></use>
+						</svg>
+					</a>
+					<a href="javascript:void(0)" class="header__search--cross" id="searchCross">
+						<svg class="icon h-icons--icon-16">
+					    	<use xlink:href="./img/sprite.svg#icons--icon16"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="header__auth">
+					<a href="javascript:void(0)" class="header__auth--button">
+						Вход
+					</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+<section class="subcategory__head">
+	<div class="container">
+		<ul class="subcategory__head--breadcrumbs">
+			<li class="subcategory__head--breadcrumb"><a href="javascript:void(0)" class="subcategory__head--link">Главная</a></li>
+			<li class="subcategory__head--breadcrumb"><a href="javascript:void(0)" class="subcategory__head--link">Игры</a></li>
+			<li class="subcategory__head--breadcrumb"><a href="javascript:void(0)" class="subcategory__head--link">Аркады</a></li><li class="subcategory__head--breadcrumb"><a href="javascript:void(0)" class="subcategory__head--link">Strike Force</a></li>
+		</ul>
+		<h1 class="subcategory__head--title -game">MARVEL Strike Force</h1>
+		<div class="breadcrumbs--star">
+			<svg class="icon icons--icon-30">
+				<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+			</svg>
+		</div>
+	</div>
+</section>
+<main class="main-game main-picture">
+	<div class="game">
+		<div class="game-preview">
+			<div class="game-preview--img">
+				<img src="./img/game_picture.png" alt="">
+			</div>
+			<div class="game-preview__content">
+			<div class="game-preview--rating">
+				<ul class="game-preview--list">
+					<li class="game-preview--item">
+						<span class="game-preview--rating-name">Графика</span>
+						<span class="game-preview--rating-line"></span>
+						<span class="game-preview--rating-rate">4</span>
+					</li>
+					<li class="game-preview--item">
+						<span class="game-preview--rating-name">Геймплей</span>
+						<span class="game-preview--rating-line"></span>
+						<span class="game-preview--rating-rate">4</span>
+					</li>
+					<li class="game-preview--item">
+						<span class="game-preview--rating-name">Управление</span>
+						<span class="game-preview--rating-line"></span>
+						<span class="game-preview--rating-rate">5</span>
+					</li>
+					<li class="game-preview--item">
+						<span class="game-preview--rating-name">В целом</span>
+						<span class="game-preview--rating-line"></span>
+						<span class="game-preview--rating-rate">4</span>
+					</li>
+				</ul>
+				<div class="new__item--rating" data-rate="medium">6,6</div>
+			</div>
+			<a href="#reviewAnchor" class="game-preview--link js-anchor">142 отзыва</a>
+			<div class="game-preview__info">
+				<ul class="game-preview--list">
+					<li class="game-preview--item">
+						<span class="game-preview--rating-name">Версия ОС</span>
+						<span class="game-preview--rating-line"></span>
+						<span class="game-preview--rating-rate">Android 4.1+</span>
+					</li>
+					<li class="game-preview--item">
+						<span class="game-preview--rating-name">Категория</span>
+						<span class="game-preview--rating-line"></span>
+						<span class="game-preview--rating-rate">Симуляторы</span>
+					</li>
+					<li class="game-preview--item">
+						<span class="game-preview--rating-name">Язык</span>
+						<span class="game-preview--rating-line"></span>
+						<span class="game-preview--rating-rate">Английский</span>
+					</li>
+					<li class="game-preview--item">
+						<span class="game-preview--rating-name">Платный контент</span>
+						<span class="game-preview--rating-line"></span>
+						<span class="game-preview--rating-rate">
+							<svg class="icon icons--icon-15">
+								<use xlink:href="./img/sprite.svg#icons--icon15"></use>
+							</svg>
+						</span>
+					</li>
+					<li class="game-preview--item">
+						<span class="game-preview--rating-name">Реклама</span>
+						<span class="game-preview--rating-line"></span>
+						<span class="game-preview--rating-rate">
+							<svg class="icon icons--icon-16">
+								<use xlink:href="./img/sprite.svg#icons--icon16"></use>
+							</svg>
+						</span>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<div class="game-descr">
+			<div class="game-descr--toolbar">
+			<a href="#downloadAnchor" class="game-descr--download js-anchor">Скачать</a>
+			<div class="game-descr--numbers">
+				<span class="item__content--downloads">
+					<svg class="icon icons--icon-29">
+						<use xlink:href="./img/sprite.svg#icons--icon29"></use>
+					</svg>	
+					2410
+				</span>
+				<span class="item__content--comments">
+					<svg class="icon icons--icon-5">
+						<use xlink:href="./img/sprite.svg#icons--icon5"></use>
+					</svg>
+					1,8k
+				</span>
+			</div>
+			<div class="filter--button game--share">
+				<a href="javascript:void(0)" class="js-filter">
+					<svg class="icon icons--icon-22">
+						<use xlink:href="./img/sprite.svg#icons--icon22"></use>
+					</svg>
+					Поделиться 
+				</a>
+				<ul class="filter__submenu js-filter__submenu">
+					<li class="filter__submenu--item">
+						<a href="javascript:void(0)" class="filter__submenu--link">
+							<svg class="icon icons--icon-26">
+								<use xlink:href="./img/sprite.svg#icons--icon26"></use>
+							</svg>
+							Facebook 
+						</a>
+					</li>
+					<li class="filter__submenu--item">
+						<a href="javascript:void(0)" class="filter__submenu--link">
+							<svg class="icon icons--icon-25">
+								<use xlink:href="./img/sprite.svg#icons--icon25"></use>
+							</svg>
+							Twitter 
+						</a>
+					</li>
+					<li class="filter__submenu--item">
+						<a href="javascript:void(0)" class="filter__submenu--link">
+							<svg class="icon icons--icon-27">
+								<use xlink:href="./img/sprite.svg#icons--icon27"></use>
+							</svg>
+							Vkontakte 
+						</a>
+					</li>
+				</ul>
+			</div>
+			</div>
+			<p class="game-descr--description">X-Wing Flight – захватывающий симулятор на андроид, где вы будете управлять знаменитым космическим кораблем X-Wing известным из серии фильмов «Звездные войны». В этой игре вы будете выступать в роли повстанцев, которым предстоит сражаться с Империей. Возьмите под</p>
+			<div class="item__tags game-descr--tags">
+				<a href="javascript:void(0)" class="item__tags--tag">Игры на русском языке</a>
+				<a href="javascript:void(0)" class="item__tags--tag">Игры с кэшем</a>
+				<a href="javascript:void(0)" class="item__tags--tag">Бесплатные игры</a>
+				<a href="javascript:void(0)" class="item__tags--tag">Машинки</a>
+				<a href="javascript:void(0)" class="item__tags--tag -plus">
+					<svg class="icon icons--icon-17">
+						<use xlink:href="./img/sprite.svg#icons--icon17"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="game-descr--slider-for">
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div><div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div><div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+			</div>
+			<div class="game-descr--slider-nav--wrap">
+			<div class="game-descr--slider-nav">
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div><div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div><div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+				<div class="game-descr--slider-item">
+					<img src="./img/game_img.png" alt="game">
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="game-download" id="downloadAnchor">
+			<p class="game-download--title">Скачать игру</p>
+			<div class="game-download__block -first" data-state="is-opened">
+				<div class="game-download__block--title">
+					<span class="game-download__block--title_button">
+						<svg class="icon icons--icon-13">
+							<use xlink:href="./img/sprite.svg#icons--icon13"></use>
+						</svg>
+					</span>
+					v1.89 Оригинал
+				</div>
+				<div class="game-download__block--content">
+				<p class="game-download__block--meta">13.10.2018 - Пуш-апы на андроид 8+</p>
+				<div class="game-download__block--instruction">
+					<p>Кэш к игре My Pocket Girls: папку из архива распаковать в /Android/obb/ </p>
+					<p>- должно получиться так /Android/obb/com.Denis.MyPocketGirl/ </p>
+					<p>- установить apk, запустить игру!</p>
+				</div>
+				<div class="game-download__block--buttons">
+					<a href="javascript:void(0)" class="game-download__block--button -orange">Скачать APK<span>32,73 Мб</span></a>
+					<a href="javascript:void(0)" class="game-download__block--button">Скачать КЭШ<span>1410,72 Мб</span></a>
+					<a href="javascript:void(0)" class="game-download__block--button">Скачать КЭШ через торрент
+						<span>0.01 Мб</span></a>
+				</div>
+				<div class="game-download__toolbar">
+				<p class="game-download__block--files">
+					Файлы: <span><img src="./img/founder.png" alt="">Founder</span>
+				</p>
+				<p class="game-download__block--working">
+					Работает? 
+					<a href="javascipt:void" class="game-download__block--working-button">
+						<svg class="icon icons--icon-15">
+							<use xlink:href="./img/sprite.svg#icons--icon15"></use>
+						</svg>
+					</a>
+					<a href="javascipt:void" class="game-download__block--working-button">
+						<svg class="icon icons--icon-16">
+							<use xlink:href="./img/sprite.svg#icons--icon16"></use>
+						</svg>
+					</a>
+				</p>
+				<div class="game-download__rating--block">
+					<div class="game-download__block--rating">
+						<div style="width: 88%"></div>
+					</div>
+					<p class="game-download__block--votes">Голосов: 26
+						<span>88%</span>
+					</p>
+				</div>
+			</div>
+				</div>
+			</div>
+			<div class="game-download__block">
+				<div class="game-download__block--title">
+					<span class="game-download__block--title_button">
+						<svg class="icon icons--icon-13">
+							<use xlink:href="./img/sprite.svg#icons--icon13"></use>
+						</svg>
+					</span>
+					v1.85 Оригинал
+				</div>
+				<div class="game-download__block--content">
+				<p class="game-download__block--meta">13.10.2018 - Пуш-апы на андроид 8+</p>
+				<div class="game-download__block--instruction">
+					<p>Кэш к игре My Pocket Girls: папку из архива распаковать в /Android/obb/ </p>
+					<p>- должно получиться так /Android/obb/com.Denis.MyPocketGirl/ </p>
+					<p>- установить apk, запустить игру!</p>
+				</div>
+				<div class="game-download__block--buttons">
+					<a href="javascript:void(0)" class="game-download__block--button -orange">Скачать APK<span>32,73 Мб</span></a>
+					<a href="javascript:void(0)" class="game-download__block--button">Скачать КЭШ<span>1410,72 Мб</span></a>
+					<a href="javascript:void(0)" class="game-download__block--button">Скачать КЭШ через торрент
+						<span>0.01 Мб</span></a>
+				</div>
+				<div class="game-download__toolbar">
+				<p class="game-download__block--files">
+					Файлы: <span><img src="./img/founder.png" alt="">Founder</span>
+				</p>
+				<p class="game-download__block--working">
+					Работает? 
+					<a href="javascipt:void" class="game-download__block--working-button">
+						<svg class="icon icons--icon-15">
+							<use xlink:href="./img/sprite.svg#icons--icon15"></use>
+						</svg>
+					</a>
+					<a href="javascipt:void" class="game-download__block--working-button">
+						<svg class="icon icons--icon-16">
+							<use xlink:href="./img/sprite.svg#icons--icon16"></use>
+						</svg>
+					</a>
+				</p>
+				<div class="game-download__rating--block">
+					<div class="game-download__block--rating">
+						<div style="width: 88%"></div>
+					</div>
+					<p class="game-download__block--votes">Голосов: 26
+						<span>88%</span>
+					</p>
+				</div>
+			</div>
+				</div>
+			</div>
+			<div class="game-download__block">
+				<div class="game-download__block--title">
+					<span class="game-download__block--title_button">
+						<svg class="icon icons--icon-13">
+							<use xlink:href="./img/sprite.svg#icons--icon13"></use>
+						</svg>
+					</span>
+					v1.61 Оригинал
+				</div>
+				<div class="game-download__block--content">
+				<p class="game-download__block--meta">13.10.2018 - Пуш-апы на андроид 8+</p>
+				<div class="game-download__block--instruction">
+					<p>Кэш к игре My Pocket Girls: папку из архива распаковать в /Android/obb/ </p>
+					<p>- должно получиться так /Android/obb/com.Denis.MyPocketGirl/ </p>
+					<p>- установить apk, запустить игру!</p>
+				</div>
+				<div class="game-download__block--buttons">
+					<a href="javascript:void(0)" class="game-download__block--button -orange">Скачать APK<span>32,73 Мб</span></a>
+					<a href="javascript:void(0)" class="game-download__block--button">Скачать КЭШ<span>1410,72 Мб</span></a>
+					<a href="javascript:void(0)" class="game-download__block--button">Скачать КЭШ через торрент
+						<span>0.01 Мб</span></a>
+				</div>
+				<div class="game-download__toolbar">
+				<p class="game-download__block--files">
+					Файлы: <span><img src="./img/founder.png" alt="">Founder</span>
+				</p>
+				<p class="game-download__block--working">
+					Работает? 
+					<a href="javascipt:void" class="game-download__block--working-button">
+						<svg class="icon icons--icon-15">
+							<use xlink:href="./img/sprite.svg#icons--icon15"></use>
+						</svg>
+					</a>
+					<a href="javascipt:void" class="game-download__block--working-button">
+						<svg class="icon icons--icon-16">
+							<use xlink:href="./img/sprite.svg#icons--icon16"></use>
+						</svg>
+					</a>
+				</p>
+				<div class="game-download__rating--block">
+					<div class="game-download__block--rating">
+						<div style="width: 88%"></div>
+					</div>
+					<p class="game-download__block--votes">Голосов: 26
+						<span>88%</span>
+					</p>
+				</div>
+			</div>
+				</div>
+			</div>
+			<div class="game-download__block">
+				<div class="game-download__block--title">
+					<span class="game-download__block--title_button">
+						<svg class="icon icons--icon-13">
+							<use xlink:href="./img/sprite.svg#icons--icon13"></use>
+						</svg>
+					</span>
+					v0.85 Китайская версия
+				</div>
+				<div class="game-download__block--content">
+				<p class="game-download__block--meta">13.10.2018 - Пуш-апы на андроид 8+</p>
+				<div class="game-download__block--instruction">
+					<p>Кэш к игре My Pocket Girls: папку из архива распаковать в /Android/obb/ </p>
+					<p>- должно получиться так /Android/obb/com.Denis.MyPocketGirl/ </p>
+					<p>- установить apk, запустить игру!</p>
+				</div>
+				<div class="game-download__block--buttons">
+					<a href="javascript:void(0)" class="game-download__block--button -orange">Скачать APK<span>32,73 Мб</span></a>
+					<a href="javascript:void(0)" class="game-download__block--button">Скачать КЭШ<span>1410,72 Мб</span></a>
+					<a href="javascript:void(0)" class="game-download__block--button">Скачать КЭШ через торрент
+						<span>0.01 Мб</span></a>
+				</div>
+				<div class="game-download__toolbar">
+				<p class="game-download__block--files">
+					Файлы: <span><img src="./img/founder.png" alt="">Founder</span>
+				</p>
+				<p class="game-download__block--working">
+					Работает? 
+					<a href="javascipt:void" class="game-download__block--working-button">
+						<svg class="icon icons--icon-15">
+							<use xlink:href="./img/sprite.svg#icons--icon15"></use>
+						</svg>
+					</a>
+					<a href="javascipt:void" class="game-download__block--working-button">
+						<svg class="icon icons--icon-16">
+							<use xlink:href="./img/sprite.svg#icons--icon16"></use>
+						</svg>
+					</a>
+				</p>
+				<div class="game-download__rating--block">
+					<div class="game-download__block--rating">
+						<div style="width: 88%"></div>
+					</div>
+					<p class="game-download__block--votes">Голосов: 26
+						<span>88%</span>
+					</p>
+				</div>
+			</div>
+				</div>
+			</div>
+			<div class="game-download__block--require">
+				<p class="game-download__block--subtitle">Требования</p>
+				<p class="game-download__block--text">Интернет: не известно</p>
+				<p class="game-download__block--text">Автозагрузка кэша: Неизвестно</p>
+				<p class="game-download__block--text">Требуется свободного места: 37 Mb</p>
+			</div>
+			<div class="game-download__block--help">
+				<p class="game-download__block--subtitle">Помощь</p>
+				<a href="javascript:void(0)" class="game-download__block--link">Как установить?</a>
+				<a href="javascript:void(0)" class="game-download__block--link">Какой кэш выбрать?</a>
+				<a href="javascript:void(0)" class="game-download__block--link">Как установить приложения с кэшем?</a>
+				<a href="javascript:void(0)" class="game-download__block--link">Видео-инструкция</a>
+			</div>
+			<a href="javascript:void(0)" class="game-download__block--google"><img src="./img/google.png" alt=""></a>
+		</div>
+		<div class="game-info">
+			<div class="game-info--buttons">
+				<p class="game-info--text">Обновлене: 13 Октябрь 2018</p>
+				<a href="javascript:void(0)" class="game-info--button">
+					<svg class="icon icons--icon-24">
+						<use xlink:href="./img/sprite.svg#icons--icon24"></use>
+					</svg>
+					Добавить информацию
+				</a>
+				<a href="javascript:void(0)" class="game-info--button">
+					<svg class="icon icons--icon-19">
+						<use xlink:href="./img/sprite.svg#icons--icon19"></use>
+					</svg>
+					Запросить обновление
+				</a>
+				<a href="javascript:void(0)" class="game-info--button">
+					<svg class="icon icons--icon-23">
+						<use xlink:href="./img/sprite.svg#icons--icon23"></use>
+					</svg>
+					Загрузить файлы
+				</a>
+			</div>
+			<div class="game-info--admins-block">
+				<p class="game-info--subtitle">Кураторы</p>
+				<ul class="game-info--admins">
+					<li><a href="javacript:void(0)"><img src="./img/founder.png" alt=""> Founder</a></li>
+					<li><a href="javacript:void(0)"><img src="./img/founder.png" alt=""> Founder</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<aside class="filter">
+	<div class="container">
+	<div class="filter__block">
+		<div class="filter__part" data-state="is-opened">
+			<div class="filter__part--title js-aside__title">
+				<span class="filter__part--title_button">
+					<svg class="icon icons--icon-13">
+						<use xlink:href="./img/sprite.svg#icons--icon13"></use>
+					</svg>
+				</span>
+				Тематика</div>		
+			<ul class="filter__part--list">
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Кошки<span>135</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Собаки<span>17</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Рисунки<span>58</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Медведи<span>6</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Лягушки<span>17</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Кролики<span>99</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Рыбы<span>18</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Музыка<span>59</span></a>
+				</li>
+			</ul>
+		</div>
+		<div class="filter__part">
+			<div class="filter__part--title js-aside__title">
+				<span class="filter__part--title_button">
+					<svg class="icon icons--icon-13">
+						<use xlink:href="./img/sprite.svg#icons--icon13"></use>
+					</svg>
+				</span>
+				Категории</div>		
+			<ul class="filter__part--list ">
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Аркады<span>135</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Экшены<span>17</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Файтинги<span>58</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Хорроры <span>6</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Приключения<span>17</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">RPG<span>99</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Гонки<span>18</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Головоломки<span>59</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Стратегии<span>17</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Спортивные <span>99</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Симуляторы  <span>18</span></a>
+				</li>
+				<li class="filter__part--item">
+					<a href="javascript:void(0)" class="filter__part--link">Настольные  <span>59</span></a>
+				</li>
+			</ul>
+		</div>
+		<div class="filter__part">
+			<div class="filter__part--title js-aside__title">
+				<span class="filter__part--title_button">
+					<svg class="icon icons--icon-13">
+						<use xlink:href="./img/sprite.svg#icons--icon13"></use>
+					</svg>
+				</span>
+				Размеры
+			</div>
+			<input type="text" class="filter__part--input js-filter__part--input" data-state="hidden" placeholder="Найти">
+			<ul class="filter__part--list filter__picture--list js-filter__part--list">
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">А Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Б Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">В Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">В Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Б Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">А Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Г Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Д Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Е Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Ж Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">З Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">И Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">С Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Я Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">я Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки0</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+				<li class="filter__part--item"><a href="javascript:void(0)" class="filter__part--link">Картинки</a></li>
+			</ul>
+			<a href="javascript:void(0)" class="filter__part--button js-filter__show">
+				<svg class="icon icons--icon-13">
+					<use xlink:href="./img/sprite.svg#icons--icon13"></use>
+				</svg>
+				<span>Показать все</span>
+			</a>
+		</div>
+	</div>
+	</div>
+	</aside>
+	<section class="list -game">
+		<div class="container">
+			<div class="title list__title">
+				<h2 class="title__text list__title--text">
+					Похожие игры
+				</h2>
+			</div>
+			<div class="list__block js-slider -one--row">
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_1.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="high">9.2</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_2.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="medium">5.7</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_3.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="medium">5.2</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_4.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="low">2.5</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_1.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="high">9.2</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_2.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="medium">5.7</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_3.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="medium">5.2</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_4.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="low">2.5</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_1.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="high">9.2</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_2.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="medium">5.7</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_3.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="medium">5.2</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_4.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="low">2.5</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="list -game">
+		<div class="container">
+			<div class="title list__title">
+				<h2 class="title__text list__title--text">
+					Другие игры от разработчика
+				</h2>
+			</div>
+			<div class="list__block js-slider -one--row">
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_1.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="high">9.2</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_2.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="medium">5.7</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_3.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="medium">5.2</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_4.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="low">2.5</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_1.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="high">9.2</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_2.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="medium">5.7</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_3.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="medium">5.2</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_4.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="low">2.5</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_1.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="high">9.2</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_2.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="medium">5.7</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_3.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="medium">5.2</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="javascript:void(0)" class="list__item">
+					<figure class="list__item--block">
+						<img src="./img/item1_4.png" class="list__item--img" alt="">
+						<span class="list__item--rating" data-rate="low">2.5</span>
+						<figcaption class="list__item--name">
+							<div class="list__item--text">Brick Blast Ball</div>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+		</div>
+	</section>
+	<div class="game-comments" id="reviewAnchor">
+		<div class="container">
+		<div class="game-comments__titles">
+			<a href="javascript:void(0)" class="game-comments--title" data-content="comments" data-state="is-opened">Комментарии<span>4</span></a>
+			<a href="javascript:void(0)" class="game-comments--title" data-content="reviews">Отзывы<span>17</span></a>
+		</div>
+		<div class="game-comments--block" data-state="is-opened" data-content="comments">
+			<div class="comment">
+				<div class="comment--parent">
+					<div class="comment--avatar">
+						<img src="./img/founder.png" alt="Avatar">
+					</div>
+					<div class="comment--content">
+						<p class="comment--title">Vetta<span>Вчера</span></p>
+						<div class="comment--text-block">
+						<p class="comment--text">Игра хорошая, для любителей больниц и симуляторов подойдёт. Смешные названия кабинетов - да!Но куда в этом деле без юмора?</p>
+						<a href="javascript:void(0)" class="comment--link">ответить</a>
+						</div>
+					</div>
+				</div>
+				<div class="comment--inside">
+					<div class="comment--avatar">
+						<img src="./img/founder.png" alt="Avatar">
+					</div>
+					<div class="comment--content">
+						<p class="comment--title">Vetta<span>Вчера</span></p>
+						<div class="comment--text-block">
+						<p class="comment--text">Игра хорошая, для любителей больниц и симуляторов подойдёт. Смешные названия кабинетов - да!Но куда в этом деле без юмора?</p>
+						<a href="javascript:void(0)" class="comment--link">ответить</a>
+					</div>
+					</div>
+				</div>
+				<div class="comment--inside">
+					<div class="comment--avatar">
+						<img src="./img/founder.png" alt="Avatar">
+					</div>	
+					<div class="comment--content">
+						<p class="comment--title">Vetta<span>Вчера</span></p>
+						<div class="comment--text-block">
+						<p class="comment--text">Игра хорошая, для любителей больниц и симуляторов подойдёт. Смешные названия кабинетов - да!Но куда в этом деле без юмора?</p>
+						<a href="javascript:void(0)" class="comment--link">ответить</a>
+					</div>
+					</div>
+				</div>
+				<div class="comment--inside">
+					<div class="comment--avatar">
+						<img src="./img/founder.png" alt="Avatar">
+					</div>
+					<div class="comment--content">
+						<p class="comment--title">Vetta<span>Вчера</span></p>
+						<div class="comment--text-block">
+						<p class="comment--text">Игра хорошая, для любителей больниц и симуляторов подойдёт. Смешные названия кабинетов - да!Но куда в этом деле без юмора?</p>
+						<a href="javascript:void(0)" class="comment--link">ответить</a>
+					</div>
+					</div>	
+				</div>
+			</div>
+			<div class="comment">
+				<div class="comment--parent">
+					<div class="comment--avatar">
+						<img src="./img/founder.png" alt="Avatar">
+					</div>
+					<div class="comment--content">
+						<p class="comment--title">Vetta<span>Вчера</span></p>
+						<div class="comment--text-block">
+						<p class="comment--text">Игра хорошая, для любителей больниц и симуляторов подойдёт. Смешные названия кабинетов - да!Но куда в этом деле без юмора?</p>
+						<a href="javascript:void(0)" class="comment--link">ответить</a>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="comment">
+				<div class="comment--parent">
+					<div class="comment--avatar">
+						<img src="./img/founder.png" alt="Avatar">
+					</div>
+					<div class="comment--content">
+						<p class="comment--title">Vetta<span>Вчера</span></p>
+						<div class="comment--text-block">
+						<p class="comment--text">Игра хорошая, для любителей больниц и симуляторов подойдёт. Смешные названия кабинетов - да!Но куда в этом деле без юмора?</p>
+						<a href="javascript:void(0)" class="comment--link">ответить</a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="game-comments--block" data-content="reviews">
+			<div class="review">
+				<span class="review__rating" data-rate="high">9.4</span>
+				<div class="review__title">
+					<div class="review__title--image"><img src="./img/avatar.png" alt=""></div>
+					<p class="review__title--name">Vovkdima82</p>
+					<p class="review__title--date">2 часа назад</p>
+				</div>
+				<div class="review__content">
+					<p class="review__game">Magic Piano Tiles 2018</p>
+					<p class="review__text">Шикарная игра! Особенно если 	вы любите музыку и быстро нажимать на экран вашего телефона. Очень классно что в игре есть не только классика (которую я так люблю), но и современные песни)))</p>
+				</div>
+			</div>
+			<div class="review">
+				<span class="review__rating" data-rate="high">9.4</span>
+				<div class="review__title">
+					<div class="review__title--image"><img src="./img/avatar.png" alt=""></div>
+					<p class="review__title--name">Vovkdima82</p>
+					<p class="review__title--date">2 часа назад</p>
+				</div>
+				<div class="review__content">
+					<p class="review__game">Magic Piano Tiles 2018</p>
+					<p class="review__text">Шикарная игра! Особенно если 	вы любите музыку и быстро нажимать на экран вашего телефона. Очень классно что в игре есть не только классика (которую я так люблю), но и современные песни)))</p>
+				</div>
+			</div>
+			<div class="review">
+				<span class="review__rating" data-rate="high">9.4</span>
+				<div class="review__title">
+					<div class="review__title--image"><img src="./img/avatar.png" alt=""></div>
+					<p class="review__title--name">Vovkdima82</p>
+					<p class="review__title--date">2 часа назад</p>
+				</div>
+				<div class="review__content">
+					<p class="review__game">Magic Piano Tiles 2018</p>
+					<p class="review__text">Шикарная игра! Особенно если 	вы любите музыку и быстро нажимать на экран вашего телефона. Очень классно что в игре есть не только классика (которую я так люблю), но и современные песни)))</p>
+				</div>
+			</div>
+			<div class="review">
+				<span class="review__rating" data-rate="high">9.4</span>
+				<div class="review__title">
+					<div class="review__title--image"><img src="./img/avatar.png" alt=""></div>
+					<p class="review__title--name">Vovkdima82</p>
+					<p class="review__title--date">2 часа назад</p>
+				</div>
+				<div class="review__content">
+					<p class="review__game">Magic Piano Tiles 2018</p>
+					<p class="review__text">Шикарная игра! Особенно если 	вы любите музыку и быстро нажимать на экран вашего телефона. Очень классно что в игре есть не только классика (которую я так люблю), но и современные песни)))</p>
+				</div>
+			</div>
+		</div>
+		<div class="game-comments__feedback">
+			<div class="game-comments__feedback--author">
+				<img src="./img/founder.png" alt="">
+				<span>Adanos</span>
+			</div>
+			<div class="game-comments__form">
+				<div class="game-comments__form-textarea">
+					<textarea name="review" cols="30" rows="10" placeholder="Текст вашего комментария"></textarea>
+				</div>
+				<div class="game-comments__form--rating">
+					<ul class="game-comments__form--list">
+						<li>
+							<span class="game-comments__form--item">Графика</span>
+							<span class="game-comments__form--stars">
+								<span class="picture__rating--star" data-state="is-active">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+								<span class="picture__rating--star" data-state="is-active">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+								<span class="picture__rating--star" data-state="is-active">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+								<span class="picture__rating--star">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+								<span class="picture__rating--star">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+							</span>
+							<span class="game-comments__form--value">3</span>
+						</li>
+						<li>
+							<span class="game-comments__form--item">Геймплей</span>
+							<span class="game-comments__form--stars">
+								<span class="picture__rating--star" data-state="is-active">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+								<span class="picture__rating--star" data-state="is-active">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+								<span class="picture__rating--star" data-state="is-active">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+								<span class="picture__rating--star">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+								<span class="picture__rating--star">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+							</span>
+						</li>
+						<li>
+							<span class="game-comments__form--item">Управление</span>
+							<span class="game-comments__form--stars">
+								<span class="picture__rating--star" data-state="is-active">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+								<span class="picture__rating--star" data-state="is-active">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+								<span class="picture__rating--star" data-state="is-active">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+								<span class="picture__rating--star">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+								<span class="picture__rating--star">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+							</span>
+						</li>
+						<li>
+							<span class="game-comments__form--item">В целом</span>
+							<span class="game-comments__form--stars">
+								<span class="picture__rating--star" data-state="is-active">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+								<span class="picture__rating--star" data-state="is-active">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+								<span class="picture__rating--star" data-state="is-active">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+								<span class="picture__rating--star">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+								<span class="picture__rating--star">
+									<svg class="icon h-icons--icon-30">
+										<use xlink:href="./img/sprite.svg#icons--icon30"></use>
+									</svg>
+								</span>
+							</span>
+						</li>
+					</ul>
+					<div class="new__item--rating" data-rate="medium">6,6</div>
+				</div>
+				<div class="game-comments__form--buttons">
+					<div class="game-comments__form--img">
+						<svg class="icon h-icons--icon-10">
+							<use xlink:href="./img/sprite.svg#icons--icon10"></use>
+						</svg>
+					</div>
+					<div class="game-comments__form--smiles">
+						<span class="js-smiles">
+							<svg class="icon h-icons--icon-11">
+								<use xlink:href="./img/sprite.svg#icons--icon11"></use>
+							</svg>
+						</span>
+						<div class="game-comments__form--smiles-block">
+							<span><img src="./img/smiles/smiles-01.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-02.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-03.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-04.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-05.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-06.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-07.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-08.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-09.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-10.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-11.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-12.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-13.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-14.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-15.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-16.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-17.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-18.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-19.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-20.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-21.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-22.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-23.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-24.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-25.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-26.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-27.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-28.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-29.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-30.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-31.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-32.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-33.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-34.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-35.svg" alt=""></span>
+							<span><img src="./img/smiles/smiles-36.svg" alt=""></span>
+						</div>
+					</div>
+					<div class="game-comments__form--rating-button">
+						<svg class="icon icons--icon-7">
+							<use xlink:href="./img/sprite.svg#icons--icon7"></use>
+						</svg>
+						<span class="game-comments__form--rating-text">
+							<span>Оценить игру</span>
+							<svg class="icon h-icons--icon-13">
+								<use xlink:href="./img/sprite.svg#icons--icon13"></use>
+							</svg>
+						</span>
+					</div>
+				</div>
+				<a href="javascript:void(0)" class="game-comments__form--submit">Отправить</a>
+			</div>
+		</div>
+		</div>
+	</div>
+</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__left">
+				<nav class="footer__nav">
+					<ul class="footer__menu">
+						<li class="footer__menu--item"><a href="javascript:void(0)" class="footer__menu--link">Конкурс</a></li>
+						<li class="footer__menu--item"><a href="javascript:void(0)" class="footer__menu--link">Контакты</a></li>
+					</ul>
+				</nav>
+				<p class="footer--copyright">© androspace.ru, 2017 — 2018</p>
+			</div>
+			<div class="footer__links">
+				<a href="javascript:void(0)" class="footer--link">Правообладателям</a>
+				<a href="javascript:void(0)" class="footer--link">Отказ от ответственности</a>
+				<a href="javascript:void(0)" class="footer--link">Политика конфиденциальности</a>
+			</div>
+		</div>
+	</footer>
+	<!-- Modals -->
+	<div class="opacity"></div>
+	<!-- Scripts -->
+	<script src="./js/main.js"></script>
+</body>
+</html>

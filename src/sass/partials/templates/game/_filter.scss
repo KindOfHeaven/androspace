@@ -1,0 +1,15 @@
+@include respond-above(md) {
+	.filter__block {
+		width: 100%;
+	}
+	.filter__part--title_button {
+		display: none;
+	}
+	.main-game {
+		& .filter {
+			& .container {
+				padding: 0;
+			}
+		}
+	}
+}

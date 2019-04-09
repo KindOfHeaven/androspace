@@ -1,0 +1,33 @@
+.page-info {
+	background: #FFF;
+	padding: 50px 0;
+	position: relative;
+	z-index: 1;
+}
+.page-info--title {
+	color: $grey;
+	font-size: $text-title;
+	margin-bottom: 25px;
+	line-height: $text-l_title;
+	font-weight: 700;
+	text-align: center;
+}
+.page-info--subtitle {
+	font-size: 20px;
+	line-height: 25px;
+	text-align: center;
+	color: $grey;
+}
+.page-info--text {
+	margin-top: 25px;
+	color: $grey;
+	font-size: $text;
+	line-height: 25px;
+}
+
+
+@include respond-above(md) {
+	.page-info--title, .page-info--subtitle {
+		text-align: left;
+	}
+}

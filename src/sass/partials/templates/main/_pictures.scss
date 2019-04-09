@@ -1,0 +1,44 @@
+.list__pictures {
+	& .list__item {
+		height: 465px;
+	}
+	& .list__item--block {
+		flex: 0 0 100%;
+		& img {
+			height: 100%;
+			flex: 0 0 100%;
+		}
+	}
+	border-bottom: none;
+}
+
+@include respond-above(md) {
+	.list__pictures {
+		& .list__item {
+			height: 290px;
+		}
+		& .button--all {
+			height: 290px;
+		}
+	}
+}
+@include respond-above(lg) {
+	.list__pictures {
+		& .list__item {
+			height: 300px;
+		}
+		& .button--all {
+			height: 300px;
+		}
+	}
+}
+@include respond-above(lg) {
+	.list__pictures {
+		& .list__item {
+			height: 320px;
+		}
+		& .button--all {
+			height: 320px;
+		}
+	}
+}

@@ -1,0 +1,159 @@
+.tabs {
+	width: 100%;
+	@include flex(row, flex-start, stretch);
+	height: 70px;
+	border-bottom: 1px solid #d7dce0;
+}
+.tabs__tab {
+	flex: 0 0 calc(100%/3);
+	height: calc(100% + 1px);
+	position: relative;
+	cursor: pointer;
+	top: 0;
+	border-bottom: 2px solid transparent;
+	@include transition();
+	@include flex(row, center, center);
+	&:hover, &[data-state="is-active"] {
+		border-bottom: 2px solid $green-medium;
+	}
+}
+.tabs__tab--icon {
+	font-size: $text-large;
+	color: $green-medium;
+}
+.tabs__tab--name {
+	display: none;
+}
+.settings {
+	& .container {
+		@include flex(row, flex-start, center, wrap);
+		position: relative;
+	}
+	padding: 20px 0;
+}
+.settings__block {
+	flex: 0 0 200px;
+	width: 200px;
+	border: 1px solid #d7dce0;
+	@include flex(row, flex-start, stretch, nowrap);
+	-webkit-border-radius: 6px;
+	        border-radius: 6px;
+	height: 50px;
+	&:hover {
+		border: 1px solid $green-light;
+	}
+	margin: 0 50% 10px 0;
+	position: relative;
+}
+.settings__block--close {
+	position: absolute;
+	top: 15px;
+	left: 240px;
+	z-index: 5;
+	width: 20px;
+	color: $green-medium;
+	cursor: pointer;
+	& .locker {
+		@include transition(all, .5s);
+	}
+	&[data-state="is-closed"] {
+		& .locker {
+		-webkit-transform: translate(28px) scale(-1, 1);
+		   -moz-transform: translate(28px) scale(-1, 1);
+		    -ms-transform: translate(28px) scale(-1, 1);
+		     -o-transform: translate(28px) scale(-1, 1);
+		        transform: translate(28px) scale(-1, 1);
+		}
+	}
+}
+.settings__block--name {
+	flex: 0 0 90px;
+	height: 100%;
+	@include flex(row, center, center);
+	color: $black;
+	font-size: $text-small;
+	background: $inactive;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+.settings__block--input {
+	padding-left: 15px;
+	flex: 1 1 calc(100% - 91px);
+	max-width: calc(100% - 91px);
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border: none;
+	color: $black;
+	font-size: $text-small;
+}
+.settings--setting {
+	width: 60px;
+	height: 50px;
+	@include flex(row, center, center);
+	flex: 0 0 60px;
+	border: 1px solid #d7dce0;
+	margin: 10px 10px 0 0;
+	-webkit-border-radius: 6px;
+	        border-radius: 6px;
+	color: $black;
+	font-size: $text-small;
+	background: #FFF;
+	@include transition();
+	&:hover, &[data-state="is-active"] {
+		background: $yellow;
+		border: 1px solid $yellow;
+	}
+}
+
+@include respond-above(sm) {
+	.tabs__tab--name {
+		display: block;
+		color: $black;
+		font-size: $text-small;
+		margin-left: 10px;
+	}
+	.settings__block--close {
+		left: 232px;
+	}
+	.settings__block {
+		margin-right: calc(100vw - 480px);
+		&:first-child {
+			margin-right: 40px;
+		}
+	}
+	.settings__block--close {
+		right: -28px;
+	}
+}
+@include respond-above(md) {
+	.settings__block {
+		flex: 0 0 180px;
+		width: 180px;
+		margin-right: calc(100vw - 710px);
+	}
+	.settings__block--close {
+		left: 210px;
+	}
+	.settings--setting {
+		margin: 0 10px 10px 0;
+	}
+}
+@include respond-above(lg){
+	.settings__block{
+		margin-right: 0;
+	}
+	.settings--setting {
+		margin: 0 0px 10px 10px;
+	}
+}
+@include respond-above(xl) {
+	.tabs__tab {
+		flex: 0 0 145px;
+	}
+	.settings__block {
+		margin-bottom: 0;
+	}
+	.settings--setting {
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,74 @@
+// Fonts
+@import "partials/fonts";
+
+/*
+* Third Party
+*/
+@import "../../bower_components/normalize.css/normalize.css";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+@import "../../bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css";
+
+/*
+* Custom
+*/
+
+// Variables and mixins
+@import "partials/variables";
+@import "partials/mixins";
+
+// Reset
+@import "partials/reset";
+
+// SVG Sprites
+@import "partials/sprite";
+
+
+
+//Styles
+@import "partials/app";
+@import "partials/templates/header";
+@import "partials/templates/footer";
+
+// Main
+@import "partials/templates/main/new";
+@import "partials/templates/main/list";
+@import "partials/templates/main/choice";
+@import "partials/templates/main/pictures";
+@import "partials/templates/main/top";
+@import "partials/templates/main/text";
+@import "partials/templates/main/reviews";
+
+// Category
+@import "partials/templates/category/head";
+@import "partials/templates/category/compilation";
+@import "partials/templates/category/tags";
+
+// Subcategory
+@import "partials/templates/subcategory/head";
+@import "partials/templates/subcategory/filter";
+@import "partials/templates/subcategory/items";
+@import "partials/templates/subcategory/pagination";
+@import "partials/templates/subcategory/pageinfo";
+
+// Pics
+@import "partials/templates/pics/items";
+
+// Picture
+@import "partials/templates/picture/settings";
+@import "partials/templates/picture/picture";
+@import "partials/templates/picture/picture-info";
+@import "partials/templates/picture/familiar";
+@import "partials/templates/picture/filter";
+
+// Game
+@import "partials/templates/game/head";
+@import "partials/templates/game/preview";
+@import "partials/templates/game/descr";
+@import "partials/templates/game/download";
+@import "partials/templates/game/info";
+@import "partials/templates/game/familiar";
+@import "partials/templates/game/comments";
+@import "partials/templates/game/filter";
+
+// 404
+@import "partials/templates/404";

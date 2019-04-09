@@ -1,0 +1,36 @@
+.breadcrumbs--star {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	width: 50px;
+	height: 70px;
+	background: url(../img/mark.png) center center no-repeat;
+	@include flex(row, center, flex-start);
+	padding-top: 15px;
+	& svg {
+		color: $white;
+	}
+}
+.subcategory__head--title.-game {
+	font-size: $text-large;
+}
+@include respond-below(xl){
+	.breadcrumbs--star.-picture {
+		display: none;
+	}
+}
+@include respond-above(sm) {
+	.subcategory__head--title.-game {
+		font-size: 32px;
+	}
+}
+@include respond-above(md) {
+	.subcategory__head--title.-game {
+		font-size: 36px;
+	}
+}
+@include respond-above(lg) {
+	.subcategory__head--title.-game {
+		font-size: 42px;
+	}
+}

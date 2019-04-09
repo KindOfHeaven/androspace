@@ -1,0 +1,213 @@
+.container {
+	max-width: map-get($breakpoints, xl);
+	margin: 0 auto;
+	padding: 0 20px;
+	position: relative;
+	width: 100%;
+}
+.ui-helper-hidden-accessible {
+	display: none;
+}
+.title__text {
+	font-size: $text-title;
+	font-weight: 700;
+	color: $grey;
+	text-align: center;
+	line-height: 40px;
+	padding: 23px 0;
+	& .icon {
+	    margin-right: 7px;
+    	font-size: 34px;
+    	position: relative;
+    	bottom: 4px;
+    	vertical-align: middle;
+	}
+}
+.slick-track {
+	@include flex(row, space-between, center);
+}
+.slick-dots {
+	position: absolute;
+	bottom: -100px;
+	background: transparent;
+	width: 100%;
+	height: auto;
+	@include flex(row, center, center, nowrap);
+	display: flex !important;
+	& li {
+		width: $dot-size;
+		height: $dot-size;
+		position: relative;
+		margin: 0 2px;
+		-webkit-border-radius: $dot-size/2;
+		        border-radius: $dot-size/2;
+  		box-shadow: $box-shadow;
+		& button {
+			position: relative;
+			z-index: 2;
+			width: 100%;
+			height: 100%;
+			-webkit-border-radius: $dot-size/2;
+			        border-radius: $dot-size/2;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			display: block;
+			font-size: 0;
+			padding: 0;
+			background: $white;
+			@include transition(background, .3s);
+		}
+		&.slick-active {
+			& button {
+				background: $black;
+			}
+		}
+	}
+}
+@include respond-above(s) {
+	.slick-dots {
+		& li {
+			margin: 0 5px;
+		}
+	}
+}
+.button--all {
+	@include btn(100%, 60px, $green, $white, $orange-light, $white, $orange-light, $white);
+	&:active, &:focus {
+		& .icon {
+			color: $orange-light
+		}
+	}
+	&:focus {
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+	}
+	margin-top: 8px;
+	font-size: $text-small;
+	line-height: 20px;
+  	box-shadow: $box-shadow;
+  	& .icon {
+  		margin-left: 15px;
+  		font-size: 40px;
+  		color: #c8c8c8;
+  	}
+  	&.-small {
+  		flex: 0 0 calc(50% - 5px);
+  		width: calc(50% - 5px);
+  		padding: 0 20px;
+  		& .icon {
+  			display: none;
+  		}
+  	}
+  	& .button--all__n, & .button--all__t {
+  		display: none;
+  	}
+}
+.buttons--all {
+	@include flex(row, space-between, center);
+}
+
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background: $green-medium !important;
+	width: 4px;
+	opacity: 1 !important;
+}
+#ui-id-2 {
+	z-index: 101;
+}
+
+@include respond-above(sm) {
+	// .container {
+	// 	max-width: map-get($breakpoints, sm);
+	// }
+	.button--all {
+		&.-small {
+			& .icon {
+				display: block;
+			}
+		}
+	}
+}
+
+@include respond-above(md) {
+	.title__text {
+		text-align: left;
+		& br {
+			display: none;
+		}
+	}
+	// .container {
+	// 	max-width: map-get($breakpoints, md);
+	// }
+
+	.button--all {
+		flex: 0 0 calc((100% - 30px)/4);
+		margin-bottom: 10px;
+		width: calc((100% - 30px)/4);
+		height: auto;
+		margin-top: 0;
+		@include flex(column, center, center, nowrap);
+		& .button--all__m {
+			text-transform: lowercase;
+		}
+		& .button--all__t {
+			display: inline;
+		}
+		& .button--all__n {
+			display: block;
+			font-size: 40px;
+			color: $grey;
+			margin-bottom: 25px;
+			position: relative;
+			padding-right: 20px;
+			&:after {
+				content: attr(data-more);
+				display: block;
+				position: absolute;
+				color: $green-medium;
+				font-size: $text-large;
+				top: -10px;
+				right: 0;
+			}
+		}
+		& .icon {
+			margin-left: 0;
+		}
+		&.-small {
+			width: 100%;
+			& .button--all__n {
+				display: none;
+			}
+		}
+	}
+	.buttons--all {
+		flex: 0 0 calc((100% - 30px)/4);
+		width: calc((100% - 30px)/4);
+		height: auto;
+		@include flex(column, flex-start, stretch, nowrap);
+	}
+}
+
+@include respond-above(lg) {
+	// .container {
+	// 	max-width: map-get($breakpoints, lg);
+	// }
+	.button--all, .buttons--all {
+		flex: 0 0 calc((100% - 40px)/5);
+		height: auto;
+		width: calc((100% - 40px)/5);
+	}
+}
+@include respond-above(xl) {
+	// .container {
+	// 	max-width: map-get($breakpoints, xl);
+	// 	padding: 0;
+	// }
+	.button--all, .buttons--all {
+		flex: 0 0 calc((100% - 50px)/6);
+		height: auto;
+		width: calc((100% - 50px)/6);
+	}
+}

@@ -1,0 +1,85 @@
+.pagination	{
+	padding: 30px 0;
+	background: #FFF;
+	border-bottom: 2px solid $inactive
+}
+.pagination__block {
+	@include flex(row, space-between, center);
+	height: 40px;
+}
+.pagination__block--list {
+	@include flex(row, center, center);
+	height: 30px;
+	flex: 1 1 auto;
+}
+.pagination__block--item {
+	height: 30px;
+	line-height: 28px;
+	border: 1px solid #dce1e4;
+	-webkit-border-radius: 3px;
+	        border-radius: 3px;
+	text-align: center;
+	margin: 0 5px;
+	width: 30px;
+	cursor: pointer;
+	color: $green-medium;
+	font-size: 13px;
+	@include transition();
+	display: none;
+	&:hover, &[data-state="is-active"] {
+		color: $black;
+		border: 1px solid $yellow;
+		background: $yellow;
+	}	
+	&:nth-child(-n + 3) {
+		display: block;
+	}
+	&:last-child {
+		display: block !important;
+	}
+}
+.pagination__block--arrow {
+	height: 40px;
+	flex: 0 0 40px;
+	font-size: 0;
+	& > svg {
+		font-size: 40px;
+		height: 100%;
+		color: #c8c8c8;
+	}
+	cursor: pointer;
+	&.-left svg {
+		-webkit-transform: rotate(180deg);
+		   -moz-transform: rotate(180deg);
+		    -ms-transform: rotate(180deg);
+		     -o-transform: rotate(180deg);
+		        transform: rotate(180deg);
+	}
+}
+@include respond-above(sm) {
+	.pagination__block--item {
+		&:nth-child(-n + 5) {
+			display: block;
+		}
+	}
+}
+@include respond-above(md) {
+	.pagination__block--arrow {
+		@include flex(row, flex-end, center);
+		font-size: $text;
+		color: $green-medium;
+		& svg {
+			margin-left: 10px;
+		}
+		&.-left {
+			& svg {
+				margin-right: 10px;
+			}
+			@include flex(row-reverse, flex-start, center);
+		}
+		@include transition();
+		&:hover {
+			color: $black;
+		}
+	}
+}

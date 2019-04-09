@@ -1,0 +1,95 @@
+.not-exist {
+	background: $inactive;
+	position: relative;
+	padding: 140px 20px;
+}
+.not-exist__block {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 50px 75px;
+	background: url(../img/bg404.png) center center no-repeat;
+	-webkit-background-size: auto;
+	     -o-background-size: auto;
+	        background-size: auto;
+}
+.not-exist__logo {
+	display: block;
+	width: 200px;
+	& img {
+		width: 100%;
+		height: auto;
+	}
+	margin-bottom: 150px;
+}
+.not-exist--oops {
+	font-size: 24px;
+	color: $white
+}
+.not-exist--not-found {
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 80px;
+	color: $white;
+}
+.not-exist--text {
+	color: $white;
+	margin-top: 20px;
+	max-width: 400px;
+	font-size: 20px;
+	line-height: 25px;
+	& a {
+		color: $yellow;
+		@include transition(color, .3s);
+		&:hover {
+			color: $orange-light;
+		}
+	}
+}
+.not-exist--button {
+	margin-top: 50px;
+	@include btn(286px, 50px, $white, $orange-light, $white, $orange-medium,$white,$orange);
+	margin-bottom: 30px;
+}
+.not-exist__man {
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 100px)
+}
+@include respond-below(xl) {
+	.not-exist__man {
+		display: none;
+	}
+	.not-exist {
+		padding: 0 20px;
+	}
+}
+@include respond-below(lg) {
+	.not-exist__block {
+		padding: 20px;
+	}
+	.not-exist__logo {
+		margin-bottom: 50px;
+	}
+}
+@include respond-below(md) {
+	.not-exist {
+		padding: 0;
+	}
+	.not-exist__block {
+		padding: 15px 20px;
+	}
+	.not-exist__logo {
+		margin-bottom: 30px;
+	}
+}
+@include respond-below(sm) {
+	.not-exist--not-found {
+		font-size: 40px;
+		line-height: 45px;
+	}
+	.not-exist--text {
+		font-size: 17px;
+		line-height: 20px;
+	}
+}

@@ -1,0 +1,135 @@
+.top {
+	width: 100%;
+	background: $inactive;
+	padding-bottom: 40px;
+	.slick-dots {
+		position: static;
+		margin-top: 20px;
+	}
+}
+.users__block {
+	@include flex(column, flex-start, stretch, nowrap);
+	width: 100%;
+	height: auto;
+}
+.users__block--user {
+	@include flex(row, flex-start, center);
+	padding: 7px 0;
+	heigth: $top-item-height;
+	width: 100%;
+	background: #FFF;
+	-webkit-box-shadow: $box-shadow;
+	        box-shadow: $box-shadow;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+	margin-bottom: 1px;
+	&:hover {
+		.users__block--name {
+			color: $green-medium;
+		}
+	}
+	&:nth-child(1) {
+		background: $green-light;
+		.users__block--number {
+			font-weight: 700;
+			color: $green-medium
+		}
+		.users__block--rating {
+			font-weight: 700;
+			color: $white;
+		}
+		.users__block--star {
+			color: $white
+		}
+		&:hover {
+			.users__block--name {
+				color: $yellow;
+			}
+		}
+	}
+	&:nth-child(2) {
+		background: $yellow;
+		.users__block--number {
+			font-weight: 700;
+			color: $green-medium
+		}
+		.users__block--rating {
+			font-weight: 700;
+			color: $green-medium;
+		}
+		&:hover {
+			.users__block--name {
+				color: $white;
+			}
+		}
+	}
+	&:nth-child(3) {
+		background: $inactive;
+		.users__block--number {
+			font-weight: 700;
+			color: $green-medium
+		}
+		.users__block--rating {
+			font-weight: 700;
+			color: $green-medium;
+		}
+	}
+}
+.users__block--number {
+	flex: 0 0 48px;
+	color: $black;
+	font-size: $text;
+	font-weight: 400;
+	text-align: center;
+}
+.users__block--image {
+	flex: 0 0 36px;
+	height: auto;
+	& img {
+		width: 100%;
+		height: auto;
+	}
+}
+.users__block--star {
+	flex: 0 0 30px;
+	text-align: center;
+	color: $green-medium;
+	margin-left: 3px;
+}
+.users__block--rating {
+	color: $black;
+	font-weight: 400;
+	font-size: $text;
+}
+.users__block--name {
+	flex: 1 1 auto;
+	padding: 0 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	    text-overflow: ellipsis;
+	color: $black;
+	@include transition();
+}
+
+@include respond-above(md) {
+	.top__block {
+		@include flex(row, space-between, flex-start);
+	}
+	.top__block--item {
+		flex: 0 0 calc(50% - 5px);
+		width: calc(50% - 5px);
+		& .title__text {
+			& br {
+				display: none;
+			}
+		}
+	}
+}
+
+@include respond-above(lg) {
+	.top__block--item {
+		flex: 0 0 calc(50% - 12.5px);
+		width: calc(50% - 12.5px);
+	}
+}

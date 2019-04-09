@@ -1,0 +1,296 @@
+.game-download {
+	padding: 0 20px;
+	border-bottom: 1px solid #d7dce0;
+}
+.game-download--title {
+	font-size: $text-title;
+	color: $grey;
+	@include flex(row, center, center);
+	height: 80px;
+	font-weight: 700;
+}
+.game-download__block {
+	padding: 5px 0;
+	border-bottom: 1px solid #d7dce0;
+	&.-first {
+		border-top: 1px solid #d7dce0;
+	}
+	&[data-state="is-opened"] {
+		& .game-download__block--content {
+			max-height: 1000px;
+		}
+		& .game-download__block--title {
+			color: $black;
+			& .game-download__block--title_button {
+				background: $yellow;
+				color: $black;
+			}
+		}
+	}
+}
+.game-download__block--title {
+	@include flex(row, flex-start, center);
+	font-size: $text;
+	color: $green-medium;
+	@include transition();
+	cursor: pointer;
+	font-weight: 700;
+	&:hover {
+		color: $black;
+		& .game-download__block--title_button {
+			background: $yellow;
+			color: $black;
+		}
+	}
+}
+.game-download__block--title_button {
+	width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: #6bc35e;
+    margin-right: 12px;
+    border-radius: 6px;
+    color: #fff;
+    transition: all .3s linear;
+}
+.game-download__block--content {
+	max-height: 0;
+	overflow: hidden;
+	@include transition(max-height, .5s);
+}
+.game-download__block--meta {
+	margin: 10px 0 15px 0;
+	color: $black;
+	font-size: $text-small;
+}
+.game-download__block--instruction {
+	padding: 15px 20px;
+	background: $inactive;
+	margin-bottom: 20px;
+	& p {
+		&:not(:first-child) {
+			margin-top: 25px;
+		}
+		color: $black;
+		font-size: $text-small;
+		line-height: 23px;
+	}
+}
+.game-download__block--button {
+	@include btn(100%, 40px, $white, $green-light, $white, $green-medium, $white, $green);
+	margin-bottom: 10px;
+	@include flex(row, center, center, nowrap);
+	font-size: $text;
+	border: 1px solid $green-light;
+	& span {
+		font-size: 13px;
+		color: $black;
+		margin-left: 15px;
+	}
+	&.-orange {
+		@include btn(100%, 40px, $white, $orange-light, $white, $orange-medium, $white, $orange);
+		border: 1px solid $orange-light;
+	}
+}
+.game-download__block--files {
+	height: 40px;
+	font-size: $text-small;
+	color: $black;
+	margin-bottom: 20px;
+	@include flex(row, flex-start, center);
+	& span {
+		margin-left: 10px;
+		height: 100%;
+		@include flex(row, flex-start, center);
+		& img {
+			height: 100%;
+			width: auto;
+			margin-right: 10px;
+		}
+	}
+}
+.game-download__block--working {
+	height: 40px;
+	@include flex(row, flex-start, center);
+}
+.game-download__block--working-button {
+	height: 40px;
+	width: 40px;
+	@include flex(row, center, center);
+	font-size: $text-small;
+	color: $green-medium;
+	border: 1px solid #d7dce0;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+	margin-left: 10px;
+	@include transition();
+	&:hover, &:focus {
+		color: $black;
+		background: $yellow;
+	}
+}
+.game-download__block--rating {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background: $inactive;
+	width: 100%;
+	height: 2px;
+	position: relative;
+	& > div {
+		background: $green-medium;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}
+.game-download__block--votes {
+	font-size: $text-small;
+	color: $black;
+	@include flex(row, space-between, center);
+	margin-bottom: 10px;
+}
+.game-download__block--subtitle {
+	font-size: $text;
+	color: $black;
+	font-weight: 700;
+	margin: 25px 0 
+}
+.game-download__block--text {
+	margin-bottom: 20px;
+	font-size: $text-small;
+	color: $black;
+}
+.game-download__block--link {
+	margin-bottom: 20px;
+	font-size: $text-small;
+	color: $green-medium;
+	display: block;
+	@include transition();
+	&:hover {
+		color: $black;
+	}
+}
+.game-download__block--google {
+	margin-bottom: 20px;
+	display: block;
+}
+.game-download__block--buttons {
+	& .game-download__block--button:last-child {
+		& span {
+			display: none;
+		}
+	}
+}
+@include respond-above(sm) {
+	.game-download__block--buttons {
+		@include flex(row, flex-start, center, wrap);
+		& .game-download__block--button:nth-child(1) {
+			margin-right: 10px;
+		}
+		& .game-download__block--button:nth-child(1), & .game-download__block--button:nth-child(2) {
+			flex: calc(50% - 5px);
+		}
+	}
+	.game-download__block--button {
+		flex: 0 0 auto;
+		width: auto;
+		padding: 0 20px;
+		& span {
+			display: block !important;
+		}
+	}
+	.game-download__block--working {
+		display: inline-flex;
+		width: 190px;
+		margin-right: 10px;
+	}
+	.game-download__rating--block {
+		width: calc(100% - 205px);
+		display: inline-block;
+		margin-bottom: 20px;
+    	position: relative;
+    	top: 15px;
+	}
+	.game-info {
+		@include flex(row, space-between, flex-start);
+	}
+	.game-download__block--help {
+		@include flex(column, flex-start, flex-start, nowrap, inline-flex);
+		width: calc(50% - 10px);
+	}
+	.game-download__block--require {
+		@include flex(column, flex-start, flex-start, nowrap, inline-flex);
+		width: calc(50% - 10px);
+		padding-right: 25px;
+	}
+}
+@include respond-above(md) {
+	.game-download--title {
+		-webkit-justify-content: flex-start;
+		        justify-content: flex-start;
+	}
+	.game-download__rating--block {
+		max-width: 225px;
+	}
+}
+@include respond-above(lg) {
+	.game-download__block--content {
+		padding-left: 50px;
+	}
+	.game-download__block--button {
+		flex: 0 0 auto !important;
+		width: auto !important;
+		padding: 0 20px;
+	}
+	.game-download__toolbar {
+		@include flex(row, space-between, flex-start);
+		margin-top: 15px;
+	}
+	.game-download__rating--block {
+		position: static;
+		margin-bottom: 0;
+	}
+	.game-descr--download {
+		width: 180px;
+	}
+	.game-download__block--buttons .game-download__block--button {
+		margin-right: 10px !important;
+	}
+}
+@include respond-above(xl) {
+	.game-download__block--button {
+		margin-right: 10px !important;
+	}
+	.game-download__toolbar {
+		-webkit-justify-content: flex-start;
+		        justify-content: flex-start;
+	    
+	}
+	.game-download__block--google {
+		width: 225px;
+		display: inline-block;
+		margin-top: 20px;
+		& img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.game-download__block--subtitle {
+		margin-top: 0;
+	}
+	.game-download__block--require {
+		width: 380px;
+		position: relative;
+		top: -55px;
+	}
+	.game-download__block--help {
+		position: relative;
+		top: -55px;
+		width: 300px;
+	}
+}

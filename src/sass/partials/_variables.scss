@@ -1,0 +1,56 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+
+$grey: #333333;
+$grey-medium: #272727;
+$grey-light: #999999;
+
+$border: #676767;
+
+$inactive: #ededed;
+
+$yellow: #ffd932;
+
+$green: #2d732f;
+$green-medium: #46a148;
+$green-light: #6bc35e;
+
+$orange: #8e3f00;
+$orange-medium: #d86101;
+$orange-light: #ff7200;
+
+$box-shadow: 0px 3px 6px 0px rgba(19, 64, 106, 0.11);
+
+$footer-bg: #252525;
+
+// Size
+
+$text-small: 15px;
+$text: 17px;
+$text-medium: 20px;
+$text-large: 24px;
+$text-title: 28px;
+$text-l_title: 32px;
+
+$header: 60px;
+$mobile-menu: 320px;
+
+$dot-size: 10px;
+
+$top-item-height: 50px;
+
+// General
+$font: "Rubik";
+
+
+// Responsive
+$breakpoints: (
+  xs: 320px,
+  s: 400px,
+  sm: 479px,
+  hmd: 600px,
+  md: 767px,
+  lg: 999px,
+  xl: 1219px
+);
