@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+/node_modules
+=======
+/node_modules
+/bower_components
+package-lock.json
+>>>>>>> 2c3a691f2d30eb7dbc339d068528bfbeefc0cb47
