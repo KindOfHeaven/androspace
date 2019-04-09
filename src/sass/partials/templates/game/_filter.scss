@@ -1,3 +1,79 @@
+.main-game {
+	@include respond-below(md) {
+	& .filter {
+		width: 100%;
+		position: relative;
+		z-index: 1;
+		background: $inactive;
+		& .filter__block {
+			padding: 20px 0;
+			position: static;
+			width: 100%;
+			background: $inactive;
+		}
+		& .filter__part {
+			width: 100%;
+			height: auto;
+			background: #FFF;
+			-webkit-border-radius: 6px;
+			        border-radius: 6px;
+			-webkit-box-shadow: $box-shadow;
+			        box-shadow: $box-shadow;
+			margin-bottom: 10px;
+			padding: 5px;
+			@include transition();
+			&[data-state="is-opened"] {
+				& .filter__part--title {
+					color: $grey;
+					& .filter__part--title_button {
+						background: $yellow;
+						color: $grey;
+					}
+				}
+				& .filter__part--list {
+					max-height: 1000px;
+					padding: 15px;
+					@include flex(row, flex-start, center, wrap);
+				}
+				& .filter__part--item {
+					flex: 0 0 50%;
+					padding: 0 15px 0 0;
+				}
+				& .filter__part--link {
+					& > span {
+						display: none;
+					}
+				}
+				& .filter__part--input {
+					max-height: 100%;
+					border: 1px solid #d7dce0;
+					width: calc(100% - 40px);
+					display: block;
+					margin-top: 20px;
+				}
+			}
+		}
+		& .filter__part--title {
+			@include flex(row, flex-start, center, nowrap);
+			height: 40px;
+			color: $green-medium;
+			padding: 0;
+			cursor: pointer;
+		}
+		& .filter__part--list {
+			max-height: 0;	
+			overflow: hidden;
+			height: auto;
+		}
+		& .filter__part--button {
+			display: none;
+		}
+		& .filter__part--input {
+			display: none;
+		}
+	}
+}
+}
 @include respond-above(md) {
 	.filter__block {
 		width: 100%;
