@@ -9,9 +9,7 @@
 	height: auto;
 	-webkit-border-radius: 6px;
 	        border-radius: 6px;
-	overflow: hidden;
 	width: 100%;
-  	box-shadow: $box-shadow;
   	&:hover {
   		& .list__item--text {
   			color: $black
@@ -29,8 +27,14 @@
 	@include flex(column, flex-start, stretch);
 	height: 100%;
 	width: 100%;
+	margin:0 auto;
 	background: #FFF;
 	position: relative;
+	box-shadow: $box-shadow;
+	max-width:280px;
+	overflow: hidden;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
 }
 .list__item--img {
 	flex: 0 0 280px;
@@ -131,22 +135,29 @@
 	}
 }
 @include respond-above(md) {
-	.list__block {
-		@include flex(row, space-between, stretch, wrap);
-		&.-one--row {
-			.list__item {
-				&:nth-child(n + 4)  {
-					display: none;
-				}
-			}
+	.list__pictures {
+		.list__block {
+			grid-template-rows: auto;
+			grid-auto-rows: auto;
 		}
 	}
+	.list__block {
+		// @include flex(row, space-between, stretch, wrap);
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 280px;
+		grid-auto-rows: 280px;
+		grid-gap: 10px;
+		// &.-one--row {
+		// 	.list__item {
+		// 		&:nth-child(n + 4)  {
+		// 			display: none;
+		// 		}
+		// 	}
+		// }
+	}
 	.list__item {
-		flex: 0 0  calc((100% - 30px)/4);
-		margin-bottom: 10px;
-		&:nth-child(n + 8) {
-			display: none;
-		}
+		width: 100%;
 	}
 	.list__item--rating {
 		right: 10px;
@@ -170,42 +181,28 @@
 }
 @include respond-above(lg) {
 	.list__block {
-		&.-one--row {
-			.list__item {
-				&:nth-child(n + 6) {
-					display: none;
-				}
-				&:nth-child(-n + 4) {
-					display: block;
-				}
-			}
-		}
+		grid-template-columns: repeat(5, 1fr);
+		// &.-one--row {
+		// 	.list__item {
+		// 		&:nth-child(n + 6) {
+		// 			display: none;
+		// 		}
+		// 		&:nth-child(-n + 4) {
+		// 			display: block;
+		// 		}
+		// 	}
+		// }
 	}
 	.list__item {
-		flex: 0 0 calc((100% - 40px)/5);
-		&:nth-child(-n + 9) {
-			display: block;
-		}
+		// flex: 0 0 calc((100% - 40px)/5);
+		// &:nth-child(-n + 9) {
+		// 	display: block;
+		// }
 	}
 }
 
 @include respond-above(xl) {
 	.list__block {
-		&.-one--row {
-			.list__item {
-				&:nth-child(n + 7) {
-					display: none;
-				}
-				&:nth-child(-n + 5) {
-					display: block;
-				}
-			}	
-		}
-	}
-	.list__item {
-		flex: 0 0  calc((100% - 50px)/6);
-		&:nth-child(-n + 11) {
-			display: block;
-		}
+		grid-template-columns: repeat(6, 1fr);
 	}
 }

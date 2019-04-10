@@ -61,6 +61,23 @@ function filterInit() {
 function disablePictureList() {
 	if (jQuery(window).outerWidth() < 768) {
 		jQuery('.filter__picture--list').mCustomScrollbar('destroy');
+		// var event = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream ? 'touchend' : 'click';
+		// var scrolled = false;
+			
+		// jQuery(document).bind('touchmove', function() {
+		// 	scrolled = true
+		// })
+		// jQuery('.main-game .filter__part').bind(event, function() {
+		// 	if (scrolled) {
+		// 		scrolled = false;
+		// 		return 0;
+		// 	}
+		// 	if (jQuery(this).attr('data-state') == 'is-opened') {
+		// 		jQuery(this).attr('data-state', '')
+		// 	} else {
+		// 		jQuery(this).attr('data-state', 'is-opened')
+		// 	}
+		// });
 	} else {
 		jQuery('.filter__part').attr('data-state', '')
 		jQuery('.filter__picture--list').mCustomScrollbar({
@@ -74,23 +91,7 @@ function disablePictureList() {
 filterInit()
 jQuery(window).resize(function() {
 	disablePictureList();
-	var event = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream ? 'touchend' : 'click';
-	var scrolled = false;
-		
-	jQuery(document).bind('touchmove', function() {
-		scrolled = true
-	});
-	jQuery('.main-game .filter__part').bind(event, function() {
-		if (scrolled) {
-			scrolled = false;
-			return 0;
-		}
-		if (jQuery(this).attr('data-state') !== 'is-opened') {
-			jQuery(this).attr('data-state', '')
-		} else {
-			jQuery(this).attr('data-state', 'is-opened')
-		}
-	})
+	
 })
 function sort(list) {
 	var alphabet = [],

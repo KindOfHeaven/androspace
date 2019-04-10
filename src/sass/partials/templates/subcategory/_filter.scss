@@ -383,6 +383,12 @@
 	.filter {
 		flex: 0 0 184px;
 	}
+	.filter__part {
+		max-width: 183px;
+		&--link {
+			width: 183px;
+		}
+	}
 }
 @include respond-above(xl) {
 	.main-content {
@@ -390,5 +396,11 @@
 	}
 	.filter {
 		flex: 0 0 195px;
+	}
+	.filter__part {
+		max-width: 194px;
+		&--link {
+			width: 194px;
+		}
 	}
 }

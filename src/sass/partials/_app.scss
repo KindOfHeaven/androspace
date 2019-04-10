@@ -93,8 +93,8 @@
   		color: #c8c8c8;
   	}
   	&.-small {
-  		flex: 0 0 calc(50% - 5px);
-  		width: calc(50% - 5px);
+  		flex: 0 0 50%;
+  		width: 50%;
   		padding: 0 20px;
   		& .icon {
   			display: none;
@@ -143,10 +143,8 @@
 	// }
 
 	.button--all {
-		flex: 0 0 calc((100% - 30px)/4);
-		margin-bottom: 10px;
-		width: calc((100% - 30px)/4);
-		height: auto;
+		width: 100%;
+		height: 100%;
 		margin-top: 0;
 		@include flex(column, center, center, nowrap);
 		& .button--all__m {
@@ -183,9 +181,9 @@
 		}
 	}
 	.buttons--all {
-		flex: 0 0 calc((100% - 30px)/4);
-		width: calc((100% - 30px)/4);
-		height: auto;
+		width: 100%;
+		height: 100%;
+		margin-bottom: 0;
 		@include flex(column, flex-start, stretch, nowrap);
 	}
 }
@@ -193,21 +191,10 @@
 @include respond-above(lg) {
 	// .container {
 	// 	max-width: map-get($breakpoints, lg);
-	// }
-	.button--all, .buttons--all {
-		flex: 0 0 calc((100% - 40px)/5);
-		height: auto;
-		width: calc((100% - 40px)/5);
-	}
 }
 @include respond-above(xl) {
 	// .container {
 	// 	max-width: map-get($breakpoints, xl);
 	// 	padding: 0;
 	// }
-	.button--all, .buttons--all {
-		flex: 0 0 calc((100% - 50px)/6);
-		height: auto;
-		width: calc((100% - 50px)/6);
-	}
 }
