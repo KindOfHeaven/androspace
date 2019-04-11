@@ -1,3 +1,6 @@
+.main-game .container {
+	padding: 0;
+}
 .container {
 	max-width: map-get($breakpoints, xl);
 	margin: 0 auto;
@@ -83,6 +86,9 @@
 		-webkit-box-shadow: none;
 		        box-shadow: none;
 	}
+	max-width: 280px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 8px;
 	font-size: $text-small;
 	line-height: 20px;
@@ -105,7 +111,19 @@
   	}
 }
 .buttons--all {
-	@include flex(row, space-between, center);
+	display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: flex-start;
+	        align-items: flex-start;
+	.button--all {
+		max-width: 280px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
 }
 
 
@@ -128,6 +146,7 @@
 				display: block;
 			}
 		}
+		max-width: 570px;
 	}
 }
 
@@ -184,7 +203,9 @@
 		width: 100%;
 		height: 100%;
 		margin-bottom: 0;
-		@include flex(column, flex-start, stretch, nowrap);
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: 100%;
+		grid-gap: 10px;
 	}
 }
 
