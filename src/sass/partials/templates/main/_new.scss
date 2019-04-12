@@ -49,8 +49,8 @@
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
-	object-fit: cover;
-	object-position: center top;
+	// object-fit: cover;
+	// object-position: center top;
 }
 .new__item--rating {
 	position: absolute;
@@ -93,6 +93,7 @@
     /* autoprefixer: on */
   	-webkit-line-clamp: 2;
   	overflow: hidden;
+  	line-height: 1.5;
 }
 .new__item--uploaded {
 	font-size: 13px;
@@ -118,12 +119,22 @@
 				margin-left: 10px;
 			}
 		}
+			.slick-active {
+				.new__item--block {
+					float: left;
+				}
+				&.slick-current {
+					.new__item--block {
+						float: right;
+					}
+				}
+			}
 	}
 	.new__item--img {
-		flex: 1 1 auto;
+		flex: 1 1 280px;
 	}
 	.new__item--rating {
-		bottom: 75px;
+		bottom: 55px;
 		top: auto;
 	}
 }

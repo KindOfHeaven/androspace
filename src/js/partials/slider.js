@@ -38,6 +38,7 @@ function slider() {
         ]
       });
     }
+    if (jQuery('.js-slider.-large:not(.slick-initialized)').length) {
     jQuery('.js-slider.-large').slick({
   responsive: [
     {
@@ -57,6 +58,8 @@ function slider() {
     }
   ]
 });
+  }
+  if (jQuery('#topSlider:not(.slick-initialized)').length) {
 jQuery('#topSlider').slick({
     responsive: [
       {
@@ -76,6 +79,7 @@ jQuery('#topSlider').slick({
       }
     ]
 })
+}
   } else {
     if (jQuery('.js-slider__init').length) {
       jQuery('.js-slider__init').slick('unslick')

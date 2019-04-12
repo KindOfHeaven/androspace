@@ -23,6 +23,16 @@
   		}
   	}
 }
+@include respond-below(md) {
+	.slick-list {
+		margin: 0 -5px;
+		padding-bottom: 10px;
+		margin-bottom: -10px;
+	}
+	.slick-slide {
+		margin: 0 5px;
+	}
+}
 .list__item--block {
 	@include flex(column, flex-start, stretch);
 	height: 100%;
@@ -51,8 +61,8 @@
 	overflow: hidden;
 	z-index: 1;
 	@include transition(all, .5s);
-	object-fit: cover;
-	object-position: center top;
+	// object-fit: cover;
+	// object-position: center top;
 }
 .list__item--rating {
 	position: absolute;
@@ -106,6 +116,7 @@
 	font-size: $text-small;
 	font-weight: 400;
 	line-height: $text;
+	line-height: 1.5;
 	@include transition(all, .3s);
 	display: -webkit-box;
   	 /* autoprefixer: off */
@@ -134,13 +145,13 @@
 	.list {
 		& .slick-slide {
 			width: calc((100vw - 10px)/2) !important;
-			&:nth-child(odd) {
-				margin-right: 10px;
-			}
-			&::nth-child(odd):last-child {
-				margin-right: 0;
-				margin-left: 10px;
-			}
+			// &:nth-child(odd) {
+			// 	margin-right: 10px;
+			// }
+			// &::nth-child(odd):last-child {
+			// 	margin-right: 0;
+			// 	margin-left: 10px;
+			// }
 		}
 		.list__block:not(.-large) {
 			.slick-active {
@@ -156,10 +167,10 @@
 		}
 	}
 	.list__item--img {
-		flex: 1 1 auto;
+		flex: 1 1 280px;
 	}
 	.list__item--rating {
-		bottom: 75px;
+		bottom: 55px;
 		top: auto;
 	}
 	.list__filter {
@@ -267,6 +278,17 @@
 @include respond-above(xl) {
 	.list__block {
 		grid-template-columns: repeat(6, 1fr);
+		&.-one--row {
+			.list__item {
+				&:nth-child(n + 5) {
+					display: none;
+				}
+				&:nth-child(-n + 5) {
+					display: block;
+				}
+			}
+		}
+
 		&.-large {
 			.list__item {
 				&:nth-child(n + 8) {

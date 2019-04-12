@@ -10,12 +10,12 @@
 		flex: 0 0 100%;
 		order: 3;
 	}
-	.list__block.-one--row .list__item:nth-child(-n+3) {
+	.list.-game .list__block.-one--row .list__item:nth-child(-n+4) {
 		display: block;
 	}
 }
 @include respond-above(lg) {
-	.list__block.-one--row .list__item:nth-child(-n+4) {
+	.list.-game .list__block.-one--row .list__item:nth-child(-n+5) {
 		display: block;
 	}
 	.list.-game {
@@ -25,7 +25,7 @@
 	}
 }
 @include respond-above(xl) {
-	.list__block.-one--row .list__item:nth-child(-n+5) {
+	.list.-game .list__block.-one--row .list__item:nth-child(-n+6) {
 		display: block;
 	}
 	.list.-game {
