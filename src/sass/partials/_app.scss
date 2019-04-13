@@ -1,4 +1,4 @@
-.main-game .container {
+.main-game .-game .container {
 	padding: 0;
 }
 .container {
@@ -29,11 +29,15 @@
 .slick-track {
 	@include flex(row, space-between, center);
 }
+.slick-slider {
+	padding: 0 5px;
+}
 .slick-dots {
 	position: absolute;
 	bottom: -90px;
 	background: transparent;
 	width: 100%;
+	max-width: calc(100% - 10px);
 	height: auto;
 	@include flex(row, center, center, nowrap);
 	display: flex !important;
@@ -109,6 +113,9 @@
   	& .button--all__n, & .button--all__t {
   		display: none;
   	}
+  	@media (max-width: 330px) {
+		max-width: calc(100vw - 50px);
+	}
 }
 .buttons--all {
 	display: flex;
@@ -122,9 +129,14 @@
 		margin-left: 5px;
 		margin-right: 5px;
 	}
+	@include respond-below(sm) {
+		max-width: 280px;
+		margin: 0 auto;
+	}
+	@media (max-width: 330px) {
+		max-width: calc(100vw - 50px);
+	}
 }
-
-
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
 	background: $green-medium !important;
 	width: 4px;

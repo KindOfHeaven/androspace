@@ -33,18 +33,30 @@
 		margin: 0 5px;
 	}
 }
+.slick-slide > div {
+	    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .list__item--block {
 	@include flex(column, flex-start, stretch);
 	height: 100%;
 	width: 100%;
+	max-width: 280px;
 	margin:0 auto;
 	background: #FFF;
 	position: relative;
 	box-shadow: $box-shadow;
-	max-width:280px;
 	overflow: hidden;
 	border-radius: 5px;
-	border-radius: 5px;
+	&:after {
+		float: left;
+  		content: "";
+  		padding-bottom: calc(100% + 75px);
+  		display: block;
+  		width: 100%;
+  	}
 }
 .-large {
 	.list__item--block {
@@ -57,7 +69,9 @@
 .list__item--img {
 	flex: 0 0 280px;
 	width: 100%;
-	position: relative;
+	position: absolute;
+	left: 0;
+	top: 0;
 	overflow: hidden;
 	z-index: 1;
 	@include transition(all, .5s);
@@ -72,7 +86,7 @@
 	-webkit-border-radius: 20px;
 	        border-radius: 20px;
 	@include flex(row, center, center);
-	top: 260px;
+	bottom: 55px;
 	right: 20px;
 	font-size: $text-small;
 	color: $black;
@@ -97,6 +111,9 @@
 	        flex-direction: column;
 	-webkit-justify-content: space-between;
 	        justify-content: space-between;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 .list__item--uploaded {
 	font-size: 13px;
@@ -192,8 +209,8 @@
 		// @include flex(row, space-between, stretch, wrap);
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: 280px;
-		grid-auto-rows: 280px;
+		grid-template-rows: auto;
+		grid-auto-rows: auto;
 		grid-gap: 10px;
 		&.-one--row {
 			.list__item {

@@ -91,4 +91,12 @@ jQuery('#topSlider').slick({
 slider();
 jQuery(window).resize(function() {
   slider();
+
+  // jQuery('.list__item').each(function() {
+  //   var width = '0 0 '+jQuery(this).outerWidth()+'px';
+  //   jQuery(this).find('img').css('flex', width);
+  // });
 });
+
+
+
