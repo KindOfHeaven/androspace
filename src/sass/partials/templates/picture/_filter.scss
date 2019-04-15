@@ -109,6 +109,7 @@
 			padding: 15px 0;
 			display: grid;
 			max-width: 100%;
+			width: 100%;
 			grid-template-rows: auto auto 1fr;
 			grid-template-columns: auto 10px 175px;
 			grid-template-areas: "picture . filter" "familiar . filter" ". . filter";
