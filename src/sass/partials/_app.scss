@@ -1,6 +1,6 @@
-.main-game .-game .container {
+.main-game  {
 	@include respond-above(md) {
-		padding: 0;
+		// padding: 0;
 	}
 }
 .container {
